@@ -3,6 +3,39 @@
 /* border: 1px solid red;   */
   box-sizing: border-box;
     font-family:'Cabin', sans-serif;
+ 
+}
+
+
+html: {
+   background: #F6F6F6; 
+}
+body {
+  color: #4A4846;
+ 
+}
+
+.border {
+  border-bottom: 2px solid #BB5139;  
+  color: #BB5139;  
+} 
+
+
+
+.art-open {
+    color: #BB5139;   
+    
+}
+
+
+.button {
+    width: 50%;
+    color: #BB5139;
+    border: 1px solid #BB5139;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 
@@ -35,10 +68,38 @@ display: -webkit-flex;
        flex-wrap: wrap;
 }
 
-.top-list li {
-padding: 20px 14px;
-flex-wrap: wrap;
+.intro2 {
+display: -webkit-flex;
+  display: flex; 
+ width: 80%;
+    max-width: 1000px;
+    margin: 10.5em auto;
+       flex-wrap: wrap;
+}
 
+.top-list li {
+/*padding: 2px;*/
+flex-wrap: wrap;
+    margin: 0 8px;
+
+}
+
+.top-list li a {
+ padding: 3px;   
+}
+
+li a:hover {
+  border-bottom: 2px solid #BB5139;   
+}
+
+a {
+text-decoration: none;  
+  color: black;  
+}
+
+a:hover {
+    
+color: #BB5139;
 }
 
 .top-list li:first-child {
@@ -82,14 +143,12 @@ margin-top: 0;
     margin-bottom: 0;
 }
 
-.header-des {
-margin-top: .3em;  
-}
 
 .art-name {
- margin: 3.5em 0px;  
-  font-size: 1.5em;  
-font-weight: 300;
+ margin: 0 0 4.5em 0px;  
+  font-size: 1.75em;  
+    font-weight: bold; 
+    color: #BB5139;
     
 }
 
@@ -112,29 +171,47 @@ width: 50%;
 }
 
 .source {
- width: 5%;   
-  transform: rotate(-90deg);
+ width: 15%;   
+/*
+  -webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+transform: rotate(-90deg);
 	transform-origin: 93% 25%;
+    
+*/
+    
+-webkit-transform: scale(0.8) rotate(-90deg);
+-webkit-transform-origin: 41% 9%;
+-moz-transform: scale(0.8) rotate(-90deg);
+-moz-transform-origin: 41% 9%;
+-o-transform: scale(0.8) rotate(-90deg);
+-o-transform-origin: 41% 9%;
+-ms-transform: scale(0.8) rotate(-90deg);
+-ms-transform-origin: 41% 9%;
+transform: scale(0.8) rotate(-90deg);
+transform-origin: 41% 9%;
     text-align: center;
     font-size: 1.25em;
     font-weight: bold;
 /*  align-items: flex-start;*/
-    padding: 0;
-/*    background: orange;*/
-    color: black;
+    padding: 30px 10px;
+    background: #BB5139;
+    color: white;
      border-radius: 5px;
 }
 
 .source-c {
- width: 95%;
+ width: 85%;
  font-size: 2.5em;
-
+border: 2px solid #FFB067;
     padding: 20px;
 /*    background: black;*/
     align-self: flex-start;
 /*    color: white;*/
-    text-align: left;
-
+    text-align: center;
+border-radius: 10px;
     z-index: 300;
 }
 
@@ -234,7 +311,7 @@ list-style: none;
 }
 */
 .cb-slideshow li:nth-child(1) span { 
-    background-image: url(../images/1.jpg) 
+    background-image: url(../images/Jorge%20EDITED-58.jpg) 
 }
 .cb-slideshow li:nth-child(2) span { 
     background-image: url(../images/2.jpg);
@@ -398,9 +475,10 @@ list-style: none;
 	opacity: 1;
 }
 
+/*
 @media screen and (max-width: 1140px) { 
     .cb-slideshow li div h3 { font-size: 140px }
 }
 @media screen and (max-width: 600px) { 
     .cb-slideshow li div h3 { font-size: 80px }
-}
+}*/
