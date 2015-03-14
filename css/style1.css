@@ -8,11 +8,11 @@
 
 
 html: {
-   background: #F6F6F6; 
+/*   background: red; */
 }
 body {
   color: #4A4846;
- 
+    background: #FAF9F3; 
 }
 
 .border {
@@ -43,8 +43,9 @@ body {
 .top-nav {
  width: 100%;
 /*    background-color: red;*/
-/*    height: 70px;*/
+    height: 55px;
  margin: -8px auto 0 auto;
+/*    border: 1px solid red; */
 }
 
 .top-list {
@@ -52,10 +53,13 @@ display: -webkit-flex;
   display: flex;
     width: 80%;
     max-width: 1000px;
-    align-items: center;
+    align-self: center;
+ -webkit-align-self: center;
 /*    justify-content: flex-start;*/
     margin: 0 auto;
 /*    background: green;*/
+ -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
 
 }
 
@@ -64,8 +68,8 @@ display: -webkit-flex;
   display: flex; 
  width: 80%;
     max-width: 1000px;
-    margin: 6.5em auto;
-       flex-wrap: wrap;
+margin: 130vh auto 13.5em auto;
+
 }
 
 .intro2 {
@@ -73,19 +77,33 @@ display: -webkit-flex;
   display: flex; 
  width: 80%;
     max-width: 1000px;
-    margin: 10.5em auto;
-       flex-wrap: wrap;
+    margin: 13.5em auto 5em auto;
+     -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.intro3 { 
+ width: 80%;
+    max-width: 1000px;
+    margin: 2em auto 13.5em auto;
+
 }
 
 .top-list li {
 /*padding: 2px;*/
 flex-wrap: wrap;
     margin: 0 8px;
-
+-webkit-align-self: center;
+align-self: center;
+     -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .top-list li a {
  padding: 3px;   
+    font-size: 1em;
+       -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;  
 }
 
 li a:hover {
@@ -108,13 +126,12 @@ padding: 20px 0px;
     margin-left: -30px;
 }
 
-
-.container {
-margin: 110vh auto 100px auto;
-    width: 80%;
-    background-color: white;
-  
+.top-list li:last-child{
+/* content: url(../images/rss.jpg);   */
+    margin:0;
+    padding: 0;
 }
+
 
 #jorge-image {
  width: 45%;
@@ -131,7 +148,7 @@ box-shadow: 0 0 20px 0 #000000;
 
 #j-description {
   width: 55%;  
- padding: 3em 1em 3em 6em;
+ padding: 1.5em 1em 1.5em 4em;
     
 }
 
@@ -153,9 +170,9 @@ margin-top: 0;
 }
 
 .art-dsc {
-/*   font-weight: 600; */
-font-size: .9em;
- line-height: 1.4;   
+   font-weight: 500; 
+font-size: 1em;
+ line-height: 1.5;   
     
 }
 
@@ -166,8 +183,9 @@ display: flex;
 width: 50%;
 /*padding: 2em;*/
     margin: 0 auto;
- 
-    
+  
+ -webkit-align-self: center;
+     align-self: center;  
 }
 
 .source {
@@ -205,15 +223,180 @@ transform-origin: 41% 9%;
 .source-c {
  width: 85%;
  font-size: 2.5em;
-border: 2px solid #FFB067;
+border: 2px solid #4A4846;
     padding: 20px;
 /*    background: black;*/
-    align-self: flex-start;
+-webkit-align-self: center;
+align-self: flex-start;
 /*    color: white;*/
     text-align: center;
 border-radius: 10px;
-    z-index: 300;
+
 }
+
+.mobile-image {
+ display: none;   
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dropdown {
+position: relative;
+}
+.drop-nav {
+position: absolute;
+display: none;
+background: #FAF9F3;
+
+padding: 20px 10px 10px 2px;
+margin: 0;
+    border-radius: 5px;
+}
+
+
+.drop-nav li:first-child {
+margin-right: auto;  
+padding: 0px;
+    margin-left: 0;
+
+}
+
+.drop-nav li {
+margin: 15px 0;  
+}
+
+
+
+.dropdown:hover > .drop-nav {
+margin-top: 3px;
+     border-top-left-radius: 0px;
+display:block;
+z-index: 3000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Labels are titles for the text fields. You can use a placeholder instead if you like*/
+label 
+{
+    display:block;
+    margin-top:20px;
+/*    letter-spacing:2px;*/
+/*    font-size: .75*/
+}
+
+/* Centres the form within the page */
+form 
+{
+    margin: 0 auto;
+    width: 70%;
+    max-width: 300px;
+}
+
+/* Styles the text boxes */
+input, textarea, file {
+	width:100%;
+	height:27px;
+	background-color:#efefef;
+	border-radius:1px;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+border: none;
+	padding:5px;
+	margin-top:10px;
+	font-size:0.9em;
+	color:#3a3a3a;
+}
+
+input:focus {
+		border: none;
+   background-color: orange;
+    opacity: .9;
+	}
+
+/* Styles the text area boxes (message field) */	
+/*
+textarea 
+{
+	height:213px;
+	background-color: #efefef;
+}
+*/
+
+
+/* Styles the submit button */
+input#submit {
+
+	width: 100%;
+	height: 27px;
+    padding: 5px;
+	text-align: center;
+	border:none;
+	margin: 10px auto;
+	cursor:pointer;
+    align-content: center;
+    background-color: #BB5139;
+    border-bottom: 2px solid orange;
+    color: white;
+    font-size: 1em;
+    
+}
+
+
+/* Styles the submit hover */	
+#submit:hover {
+	color:#fff;
+	background-color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -253,7 +436,7 @@ border-radius: 10px;
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 40px;
+    top: 30px;
     left: 0px;
     z-index: 0; 
 }
@@ -314,79 +497,79 @@ list-style: none;
     background-image: url(../images/Jorge%20EDITED-58.jpg) 
 }
 .cb-slideshow li:nth-child(2) span { 
-    background-image: url(../images/2.jpg);
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    -ms-animation-delay: 6s;
-    animation-delay: 6s; 
+    background-image: url(../images/Jorge%20EDITED-38.jpg);
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    -ms-animation-delay: 5s;
+    animation-delay: 5s; 
 }
 .cb-slideshow li:nth-child(3) span { 
-    background-image: url(../images/3.jpg);
-    -webkit-animation-delay: 12s;
-    -moz-animation-delay: 12s;
-    -o-animation-delay: 12s;
-    -ms-animation-delay: 12s;
-    animation-delay: 12s; 
+    background-image: url(../images/Jorge%20EDITED-39.jpg);
+    -webkit-animation-delay: 11s;
+    -moz-animation-delay: 11s;
+    -o-animation-delay: 11s;
+    -ms-animation-delay: 11s;
+    animation-delay: 11s; 
 }
 .cb-slideshow li:nth-child(4) span { 
-    background-image: url(../images/4.jpg);
-    -webkit-animation-delay: 18s;
-    -moz-animation-delay: 18s;
-    -o-animation-delay: 18s;
-    -ms-animation-delay: 18s;
-    animation-delay: 18s; 
+    background-image: url(../images/Jorge%20EDITED-50.jpg);
+    -webkit-animation-delay: 17s;
+    -moz-animation-delay: 17s;
+    -o-animation-delay: 17s;
+    -ms-animation-delay: 17s;
+    animation-delay: 17s; 
 }
 .cb-slideshow li:nth-child(5) span { 
-    background-image: url(../images/5.jpg);
-    -webkit-animation-delay: 24s;
-    -moz-animation-delay: 24s;
-    -o-animation-delay: 24s;
-    -ms-animation-delay: 24s;
-    animation-delay: 24s; 
+    background-image: url(../images/Jorge%20EDITED-55.jpg);
+    -webkit-animation-delay: 23s;
+    -moz-animation-delay: 23s;
+    -o-animation-delay: 23s;
+    -ms-animation-delay: 23s;
+    animation-delay: 23s; 
 }
 .cb-slideshow li:nth-child(6) span { 
-    background-image: url(../images/6.jpg);
-    -webkit-animation-delay: 30s;
-    -moz-animation-delay: 30s;
-    -o-animation-delay: 30s;
-    -ms-animation-delay: 30s;
-    animation-delay: 30s; 
+    background-image: url(../images/Jorge%20EDITED-58.jpg);
+    -webkit-animation-delay: 29s;
+    -moz-animation-delay: 29s;
+    -o-animation-delay: 29s;
+    -ms-animation-delay: 29s;
+    animation-delay: 29s; 
 }
 .cb-slideshow li:nth-child(2) div { 
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    -ms-animation-delay: 6s;
-    animation-delay: 6s; 
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    -ms-animation-delay: 5s;
+    animation-delay: 5s; 
 }
 .cb-slideshow li:nth-child(3) div { 
-    -webkit-animation-delay: 12s;
-    -moz-animation-delay: 12s;
-    -o-animation-delay: 12s;
-    -ms-animation-delay: 12s;
-    animation-delay: 12s; 
+    -webkit-animation-delay: 11s;
+    -moz-animation-delay: 11s;
+    -o-animation-delay: 11s;
+    -ms-animation-delay: 11s;
+    animation-delay: 11s; 
 }
 .cb-slideshow li:nth-child(4) div { 
-    -webkit-animation-delay: 18s;
-    -moz-animation-delay: 18s;
-    -o-animation-delay: 18s;
-    -ms-animation-delay: 18s;
-    animation-delay: 18s; 
+    -webkit-animation-delay: 17s;
+    -moz-animation-delay: 17s;
+    -o-animation-delay: 17s;
+    -ms-animation-delay: 17s;
+    animation-delay: 17s; 
 }
 .cb-slideshow li:nth-child(5) div { 
-    -webkit-animation-delay: 24s;
-    -moz-animation-delay: 24s;
-    -o-animation-delay: 24s;
-    -ms-animation-delay: 24s;
-    animation-delay: 24s; 
+    -webkit-animation-delay: 23s;
+    -moz-animation-delay: 23s;
+    -o-animation-delay: 23s;
+    -ms-animation-delay: 23s;
+    animation-delay: 23s; 
 }
 .cb-slideshow li:nth-child(6) div { 
-    -webkit-animation-delay: 30s;
-    -moz-animation-delay: 30s;
-    -o-animation-delay: 30s;
-    -ms-animation-delay: 30s;
-    animation-delay: 30s; 
+    -webkit-animation-delay: 29s;
+    -moz-animation-delay: 29s;
+    -o-animation-delay: 29s;
+    -ms-animation-delay: 29s;
+    animation-delay: 29s; 
 }
 /* Animation for the slideshow images */
 @-webkit-keyframes imageAnimation { 
@@ -482,3 +665,180 @@ list-style: none;
 @media screen and (max-width: 600px) { 
     .cb-slideshow li div h3 { font-size: 80px }
 }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 790px) {
+    
+    
+    .top-list {
+display: -webkit-flex;
+  display: flex;
+    width: 99%;
+     -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+    }
+    
+    .top-list li a {
+ padding: 1px;   
+    font-size: .75em;
+        -webkit-flex-wrap: wrap;
+    flex-wrap: wrap; 
+}
+    
+    
+  .intro {
+display: -webkit-flex;
+  display: flex; 
+ -webkit-flex-direction: column; /* Safari 6.1+ */
+flex-direction: column; 
+ width: 95%;
+margin: 105vh auto 0 auto;
+} 
+    
+#jorge-image {
+display: none;
+}
+    
+    #j-description {
+  width: 95%;  
+ padding: 1.5em 0;
+    
+}
+    
+    .art-name {
+ margin: 0 0 1em 0px;      
+}
+    
+    .mobile-image {
+        display: inherit;
+        margin: 0 auto;
+     width: 100%;   
+    }
+    
+     .mobile-image img {
+      width: 100%; 
+         margin: 0 auto;
+     }
+    
+    
+    .intro2 {
+display: -webkit-flex;
+  display: flex;
+ width: 95%;
+margin: 0 auto 2em auto;
+   -webkit-flex-wrap: wrap;
+    flex-wrap: wrap; 
+}
+    
+    .contact {
+display: flex;   
+width: 100%;
+-webkit-justify-content: center;    
+justify-content: center;
+margin: 2.5em auto 2em;
+            -webkit-flex-wrap: wrap;
+    flex-wrap: wrap; 
+}
+
+
+    
+    
+.source {
+ width: 20%;       
+text-align: center;
+font-size: 1em;
+padding: .4em;
+-webkit-transform: scale(0.8) rotate(-90deg);
+-webkit-transform-origin: 39% 100%;
+-moz-transform: scale(0.8) rotate(-90deg);
+-moz-transform-origin: 39% 100%;
+-o-transform: scale(0.8) rotate(-90deg);
+-o-transform-origin: 39% 100%;
+-ms-transform: scale(0.8) rotate(-90deg);
+-ms-transform-origin: 39% 100%;
+transform: scale(0.8) rotate(-90deg);
+transform-origin: 39% 100%;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap; 
+}
+
+
+.source-c {
+width: 80%;
+font-size: 1.2em;
+border: 2px solid #4A4846;
+padding: 5px;
+ -webkit-align-self: center;
+align-self: center;  ;
+text-align: center;
+border-radius: 10px;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap; 
+}
+
+    
+    .intro3 { 
+ width: 95%;
+    margin: 2em auto 3em auto;
+
+}
+form {
+ margin: 0;   
+}
+    
+    .top-list li:last-child{
+  margin-left: -7px;
+        margin-right: 7px;
+        margin-top: 5px;
+    padding: 0;
+}
+    
+    .drop-nav li:last-child{
+  margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+    padding: 0;
+}
+
+    input#submit {
+
+	
+    padding: 2px;
+    font-size: 1em;
+    
+}
+    
+    .dropdown:hover > .drop-nav {
+margin-top: 0px;
+        border-top-left-radius: 0px;
+
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
