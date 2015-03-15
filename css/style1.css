@@ -57,8 +57,8 @@ img{
 .top-list {
 display: -webkit-flex;
   display: flex;
-    width: 85%;
-    max-width: 1300px;
+    width: 95%;
+/*    max-width: 1300px;*/
     align-items: baseline;
  -webkit-align-items: baseline;
 /*    justify-content: flex-start;*/
@@ -96,33 +96,45 @@ display: -webkit-flex;
 
 .intro4 {
  width: 85%;
-    max-width: 850px;
+    max-width: 750px;
 /*    background: red;*/
     margin: 0  auto;
 /*    padding: 75px;*/
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
 }
 
 .intro5 {
- width: 60%;
+display: -webkit-flex;
+  display: flex; 
+    width: 85%;
     max-width:1500px;
     margin: 0  auto;
     font-size: 4em;
     text-align: center;
+
 }
 
+.intro5 section {
+ margin: 0 2em;   
+    
+}
+
+
+
 .intro5 img {
+/*
   -webkit-box-shadow: 0 0 10px 0 #000000;
 box-shadow: 0 0 10px 0 #000000; 
     margin: .5em auto 0 auto;
     
+*/
 }
 
 
 .gallery-nav {
     width: 60%;
- margin: 6em auto;    
+ margin: 4em auto 6em auto;    
 display: -webkit-flex;
 display: flex; 
 justify-content: center;
@@ -132,13 +144,22 @@ justify-content: center;
 .direction {
  flex-grow: 1;   
 width: 50%;
-    text-align: center;
+
 }
 
 .direction-text {
  font-size: 2rem;   
-    
+   font-family: 'Cabin Sketch', cursive; 
 }
+
+    .right-a {
+     text-align: right;   
+    }
+    
+    .left-a {
+     text-align: left;   
+    }
+
 
 .direction-text img {
  width: 48px;
@@ -238,6 +259,16 @@ margin-top: 0;
 font-size: 1em;
  line-height: 1.5;   
     
+}
+
+.intro4 .art-dsc {
+    font-weight: 400; 
+font-size: 1rem;
+ line-height: 1.5; 
+    text-align: left;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .painting-description {
@@ -341,6 +372,15 @@ border-radius: 1px;
     border-bottom: 1px solid #BCBCBC;
     }
 
+.mask2 { 
+ height: 1px; 
+    margin: 6em auto 4.5em auto;
+      width:75%; 
+border-radius: 1px;
+/*      box-shadow:0 0 2px black;*/
+    border-bottom: 1px solid #BCBCBC;
+    }
+
 footer {
  padding: 3px;
     text-align: center;
@@ -368,8 +408,9 @@ footer {
 
 
 
+
 .intro-title {
- font-size: 3em;   
+ font-size: 2.4em;   
     
 }
 
@@ -559,7 +600,7 @@ input#submit {
     height: 100%;
 /*    top: 30px;*/
     
-     top: 70px;
+     top: 60px;
     left: 0px;
     z-index: 0; 
 }
@@ -806,7 +847,7 @@ list-style: none;
 
 
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 800px) {
     
     
     .cb-slideshow,
@@ -879,7 +920,7 @@ margin: 0 auto 2em auto;
     
         .intro5 {
  width: 80%;
-
+display: block;
 }
     
 
@@ -1003,6 +1044,22 @@ margin-top: 0px;
     
 }
     
+        .intro4 .art-dsc {
+    width: 88%;
+
+}
+    
+        
+
+    
+     .intro5 section {
+      margin: 0;   
+     }
+    
+    .zoom_img img{
+ 
+    margin-top: .4em;
+    }
 }
     
 @media only screen and (max-width: 699px) {    
@@ -1033,17 +1090,22 @@ transform-origin: 73% 100%;
     }
     
     .intro4 {
-font-size: 2.5em;
+font-size: 2em;
 }
     
     .intro5 {
  width: 95%;
+display: block;
 
 }
     
-    .direction-text {
- font-size: 1rem;   
+     .intro5 section {
+      margin: 0;   
+     }
     
+    .direction-text {
+ font-size: .8rem;   
+
 }
     
 .gallery-nav {
@@ -1058,11 +1120,39 @@ font-size: 2.5em;
     height: 10px;
     
 }
-    .right-a {
-     text-align: right;   
-    }
+    
+    .intro4 .art-dsc {
+    width: 98%;
+
+}
+
+
     
 }
+
+    
+@media only screen and (min-width: 800px) {
+
+.zoom_img img{
+/*
+margin:50px;
+height:100px;
+width:100px;
+*/
+    
+    margin-top: 1.5em;
+-moz-transition:-moz-transform 0.5s ease-in; 
+-webkit-transition:-webkit-transform 0.5s ease-in; 
+-o-transition:-o-transform 0.5s ease-in;
+}
+.zoom_img img:hover{
+-moz-transform:scale(1.5); 
+-webkit-transform:scale(1.5);
+-o-transform:scale(1.5);
+    
+}
+}
+
     
     
     
