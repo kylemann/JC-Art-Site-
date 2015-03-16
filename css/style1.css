@@ -169,7 +169,37 @@ width: 50%;
 
 .intro4 h2 {
  font-weight: 100;  
+   font-family: 'Cabin Sketch', cursive;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 0;
+    z-index: 1;
+}
 
+.head-icon {
+  width: 25px;
+    height: 90px;
+    background: #BB5139;
+ margin-bottom: -55px;
+    z-index: 10000;
+      border-radius: 10px;
+    margin-left: 20px;
+}
+
+.head-icon2 {
+  width: 25px;
+    height: 90px;
+    background: #BB5139;
+ margin-top: -55px;
+    z-index: 3000;
+    margin-left: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.sketch {
+    
+   font-family: 'Cabin Sketch', cursive;    
 }
 
 .top-list li {
@@ -240,7 +270,7 @@ box-shadow: 0 0 20px 0 #000000;
 
 .header {
 margin-top: 0;  
- font-size: 4em;
+ font-size: 3em;
     font-weight: 400;
     margin-bottom: 0;
 }
@@ -411,7 +441,7 @@ footer {
 
 .intro-title {
  font-size: 2.4em;   
-    
+/* font-family: 'Cabin Sketch', cursive;   */
 }
 
 .dropdown {
@@ -422,7 +452,7 @@ position: absolute;
 display: none;
 background: #FAF9F3;
 
-padding: 20px 10px 10px 2px;
+padding: 7px 10px 10px 2px;
 margin: 0;
     border-radius: 5px;
 }
@@ -1060,6 +1090,8 @@ margin-top: 0px;
  
     margin-top: .4em;
     }
+    
+
 }
     
 @media only screen and (max-width: 699px) {    
@@ -1125,6 +1157,16 @@ display: block;
     width: 98%;
 
 }
+    
+       .head-icon, .head-icon2 {
+        display: none;
+        
+    }
+    
+.m-top {
+    
+margin-top: 5.5em;   
+    }
 
 
     
@@ -1149,8 +1191,11 @@ width:100px;
 -moz-transform:scale(1.5); 
 -webkit-transform:scale(1.5);
 -o-transform:scale(1.5);
-    
+ cursor: -webkit-zoom-in; 
+    cursor: -moz-zoom-in;   
 }
+    
+ 
 }
 
     
