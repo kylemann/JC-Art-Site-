@@ -2,8 +2,9 @@
 * {
 /* border: 1px solid red;   */
   box-sizing: border-box;
-    font-family:'Cabin', sans-serif;
-
+/*  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+font-family: 'Noto Sans', sans-serif;
+/*color: grey;*/
 }
 
 
@@ -11,15 +12,15 @@ html: {
 /*   background: red; */
 }
 body {
-  color: #4A4846;
-    background: #FAF9F3; 
+/*  color: #4A4846;*/
+/*    background: #FAF9F3; */
 /*    background: orange;*/
 /*    background: #F8EBCB;*/
 }
 
 .border {
-  border-bottom: 2px solid #BB5139;  
-  color: #BB5139;  
+  border-bottom: 2px solid black;  
+/*  color: #BB5139;  */
 } 
 
 img{
@@ -29,15 +30,15 @@ img{
 
 
 .art-open {
-    color: #BB5139;   
+    color:  #BB5139;   
     
 }
 
 
 .button {
     width: 50%;
-    color: #BB5139;
-    border: 1px solid #BB5139;
+    color: black;
+    border: 1px solid grey;
     border-radius: 5px;
     padding: 10px 15px;
     text-align: center;
@@ -74,24 +75,37 @@ display: -webkit-flex;
   display: flex; 
  width: 85%;
     max-width: 1300px;
-margin: 130vh auto 13.5em auto;
+margin: 120vh auto 8.5em auto;
 
 }
 
 .intro2 {
 display: -webkit-flex;
-  display: flex; 
+  display: flex;
+    flex-direction:row;
  width: 85%;
     max-width: 1300px;
-    margin: 13.5em auto 5em auto;
+    margin: 8.5em auto;
      -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+}
+
+
+.contact-w {
+     width: 55%;   
+/*  margin-right: 2em;*/
+    }
+    
+.contact-w1 {
+/* padding: 0 100px;   */
+    width: 45%; 
+    padding-right: 75px;
 }
 
 .intro3 { 
  width: 85%;
     max-width: 1300px;
-    margin: 2em auto 6.5em auto;
+    margin: 6em auto 6.5em auto;
 }
 
 .intro4 {
@@ -149,7 +163,7 @@ width: 50%;
 
 .direction-text {
  font-size: 2rem;   
-   font-family: 'Cabin Sketch', cursive; 
+/*   font-family: 'Cabin Sketch', cursive; */
 }
 
     .right-a {
@@ -169,37 +183,37 @@ width: 50%;
 
 .intro4 h2 {
  font-weight: 100;  
-   font-family: 'Cabin Sketch', cursive;
-    border: 1px solid grey;
-    border-radius: 10px;
+/*   font-family: 'Cabin Sketch', cursive;*/
+    border: 1px solid black;
+    border-radius: 3px;
     margin: 0;
     z-index: 1;
+    font-size: 1em;
 }
 
 .head-icon {
   width: 25px;
-    height: 90px;
-    background: #BB5139;
+    height: 80px;
+    background: black;
  margin-bottom: -55px;
     z-index: 10000;
-      border-radius: 10px;
+      border-radius: 3px;
     margin-left: 20px;
 }
 
 .head-icon2 {
   width: 25px;
-    height: 90px;
-    background: #BB5139;
+    height: 80px;
+    background: black;
  margin-top: -55px;
     z-index: 3000;
     margin-left: auto;
-    border-radius: 10px;
+    border-radius: 3px;
     margin-right: 20px;
 }
 
 .sketch {
-    
-   font-family: 'Cabin Sketch', cursive;    
+/*font-family: 'Cabin Sketch', cursive;    */
 }
 
 .top-list li {
@@ -221,8 +235,8 @@ align-self: center;
     flex-wrap: wrap;  
 }
 
-li a:hover {
-  border-bottom: 2px solid #BB5139;   
+li a:hover  {
+  border-bottom: 2px solid black;   
 }
 
 a {
@@ -230,10 +244,21 @@ text-decoration: none;
   color: black;  
 }
 
+.first::first-line {
+ font-weight: bold;   
+    
+}
+
+/*
 a:hover {
 color: #BB5139;
 }
+*/
 
+.bold {
+ font-weight: bold;   
+    
+}
 
 .top-list li:first-child {
 margin-right: auto;  
@@ -255,9 +280,9 @@ background: url(../images/IMG_2818.JPG) no-repeat center center;
 -moz-background-size: cover; 
 -o-background-size: cover; 
 background-size: cover;
-border-radius: 20px;
-    -webkit-box-shadow: 0 0 20px 0 #000000;
-box-shadow: 0 0 20px 0 #000000;
+border-radius: 3px;
+    -webkit-box-shadow: 0 0 3px 0 #000000;
+box-shadow: 0 0 3px 0 #000000;
   
 }
 
@@ -280,12 +305,12 @@ margin-top: 0;
  margin: 0 0 4.5em 0px;  
   font-size: 1.75em;  
     font-weight: bold; 
-    color: #BB5139;
+/*    color: #BB5139;*/
     
 }
 
 .art-dsc {
-   font-weight: 500; 
+   font-weight: 400; 
 font-size: 1em;
  line-height: 1.5;   
     
@@ -334,13 +359,21 @@ width: 16px;
 
 .contact {
 display: flex;   
-width: 50%;
+width: 90%;
 /*padding: 2em;*/
-    margin: 0 auto;
+    margin: 1em auto 0 auto;
   
  -webkit-align-self: center;
      align-self: center;  
 }
+
+.contact1 {
+width: 50%;
+    max-width: 600px;
+padding: 0 2.5em 3em 2.5em;
+margin: 0 auto;
+}
+
 
 .source {
  width: 15%;   
@@ -369,7 +402,8 @@ transform-origin: 41% 9%;
     font-weight: bold;
 /*  align-items: flex-start;*/
     padding: 30px 10px;
-    background: #BB5139;
+/*    background: #BB5139;*/
+    background: black; 
     color: white;
      border-radius: 5px;
 }
@@ -378,14 +412,24 @@ transform-origin: 41% 9%;
  width: 85%;
  font-size: 2.5em;
 border: 2px solid #4A4846;
-    padding: 20px;
+    padding: 15px;
 /*    background: black;*/
 -webkit-align-self: center;
 align-self: flex-start;
 /*    color: white;*/
     text-align: center;
-border-radius: 10px;
+border-radius: 3px;
 
+}
+
+.top-c {
+ margin-top: 5em;   
+    
+}
+
+.center {
+ margin: 0 auto;   
+    
 }
 
 .mobile-image {
@@ -395,7 +439,7 @@ border-radius: 10px;
 
 .mask { 
  height: 1px; 
-    margin: 6em auto;
+    margin: 3em auto;
       width:75%; 
 border-radius: 1px;
 /*      box-shadow:0 0 2px black;*/
@@ -404,7 +448,7 @@ border-radius: 1px;
 
 .mask2 { 
  height: 1px; 
-    margin: 6em auto 4.5em auto;
+    margin: 3em auto 1.5em auto;
       width:75%; 
 border-radius: 1px;
 /*      box-shadow:0 0 2px black;*/
@@ -450,11 +494,11 @@ position: relative;
 .drop-nav {
 position: absolute;
 display: none;
-background: #FAF9F3;
+background: white;
 
 padding: 7px 10px 10px 2px;
 margin: 0;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 
@@ -504,7 +548,7 @@ label
 /* Centres the form within the page */
 form 
 {
-    margin: 0 auto;
+    margin:0;
     width: 70%;
     max-width: 300px;
 }
@@ -526,7 +570,7 @@ border: none;
 
 input:focus {
 		border: none;
-   background-color: orange;
+   background-color: grey;
     opacity: .9;
 	}
 
@@ -551,8 +595,8 @@ input#submit {
 	margin: 10px auto;
 	cursor:pointer;
     align-content: center;
-    background-color: #BB5139;
-    border-bottom: 2px solid orange;
+    background-color: black;
+    border-bottom: 2px solid grey;
     color: white;
     font-size: 1em;
     
@@ -562,7 +606,7 @@ input#submit {
 /* Styles the submit hover */	
 #submit:hover {
 	color:#fff;
-	background-color: orange;
+	background-color: grey;
 }
 
 
@@ -942,17 +986,29 @@ display: none;
     .intro2 {
 display: -webkit-flex;
   display: flex;
+        flex-direction: column; 
  width: 95%;
 margin: 0 auto 2em auto;
    -webkit-flex-wrap: wrap;
     flex-wrap: wrap; 
 }
     
+    .contact-w {
+     width: 95%;   
+/*  margin-right: 2em;*/
+    }
+    
+.contact-w1 {
+/* padding: 0 100px;   */
+    width: 95%; 
+    padding-right: 0;
+}
+    
         .intro5 {
  width: 80%;
 display: block;
 }
-    
+
 
     
     .contact {
@@ -965,6 +1021,9 @@ margin: 2.5em auto 2em;
     flex-wrap: wrap; 
 }
 
+    .mobile-n {
+     display: none;   
+    }
 
     
     
@@ -1004,7 +1063,7 @@ border-radius: 10px;
     
     .intro3 { 
  width: 95%;
-    margin: 2em auto 3em auto;
+    margin: 3em auto 3em auto;
 
 }
 /*
@@ -1182,7 +1241,7 @@ height:100px;
 width:100px;
 */
     
-    margin-top: 1.5em;
+margin-top: 1em;
 -moz-transition:-moz-transform 0.5s ease-in; 
 -webkit-transition:-webkit-transform 0.5s ease-in; 
 -o-transition:-o-transform 0.5s ease-in;
@@ -1194,6 +1253,12 @@ width:100px;
  cursor: -webkit-zoom-in; 
     cursor: -moz-zoom-in;   
 }
+    
+    
+    .desktop-n {
+     display: none;   
+    }
+
     
  
 }
