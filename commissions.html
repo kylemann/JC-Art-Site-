@@ -26,9 +26,21 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-    <link href='http://fonts.googleapis.com/css?family=Cabin:400,500,700|Cabin+Sketch' rel='stylesheet'              type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css/style1.css" />
 		<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+             <!-- Smooth Page scroll -->
+              <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.js"></script>
+              <script type="text/javascript">
+                $(window).load(function(){
+                $('a').click(function(){
+                    $('html, body').animate({
+                        scrollTop: $( $(this).attr('href') ).offset().top
+                    }, 500);
+                    return false;
+                });
+                });
+            </script>
 </head>
      
 <nav class="top-nav">
@@ -43,8 +55,8 @@
                             <li> <a href="commissions.html" class="border">Commissions</a></li> 
                     </ul>
             </li>
-            <li><a href="index.html#contact">Contact</a></li>
-            <li> <a href="index.html#contact">
+            <li><a href="about.html#contact">Contact</a></li>
+            <li> <a href="#subscribe">
                 <img src="images/rss.svg" style="width: 16px; height: 16px;"> 
                 </a>
             </li>
@@ -109,7 +121,7 @@
    
 <form class="center" action="form.php" method="post" enctype="multipart/form-data">
 	        
-	        <p class="art-dsc"><span class="bold"><img src="images/rss.svg" style="width: 48px; height: 48px; margin-right: 10px;">Subscribe mailing list</span> to receive updates on events, gallery openings, and new work.</p>
+	        <p class="art-dsc first"><img src="images/rss.svg" style="width: 48px; height: 48px; margin-right: 10px;">Subscribe mailing list to receive updates on events, gallery openings, and new work.</p>
 	        
 		    <input name="name" required="required" placeholder="Your Name">
 		    

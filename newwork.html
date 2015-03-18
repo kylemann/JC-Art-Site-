@@ -26,9 +26,21 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-      <link href='http://fonts.googleapis.com/css?family=Cabin:400,500,700|Cabin+Sketch' rel='stylesheet' type='text/css'>
+     <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css/style1.css" />
 		<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+             <!-- Smooth Page scroll -->
+              <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.js"></script>
+              <script type="text/javascript">
+                $(window).load(function(){
+                $('a').click(function(){
+                    $('html, body').animate({
+                        scrollTop: $( $(this).attr('href') ).offset().top
+                    }, 500);
+                    return false;
+                });
+                });
+            </script>
     </head>
      <nav class="top-nav">
          
@@ -45,7 +57,7 @@
         </ul>
       </li>
             <li><a href="index.html#contact">Contact</a></li>
-         <li> <a href="index.html#contact"><img src="images/rss.svg" style="width: 16px; height: 16px;"> </a></li>
+         <li> <a href="#subscribe"><img src="images/rss.svg" style="width: 16px; height: 16px;"> </a></li>
             </ul>
         </nav>
     <div class="mask"></div>
