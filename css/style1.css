@@ -6,9 +6,11 @@ Type, Color, General Styling
 * {
 /* border: 1px solid red;   */
   box-sizing: border-box;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+/*  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
 /*font-family: 'Noto Sans', sans-serif;*/
 /*color: grey;*/
+    
+    font-family: 'Istok Web', sans-serif;
 }
 
 body p {
@@ -35,6 +37,11 @@ img{
 
 .top-c {
  margin-top: 5em;      
+}
+
+.top-c1 {
+    
+ margin-top: 3.5em;   
 }
 
 .center {
@@ -77,14 +84,14 @@ Navigation and Links Styling
 
 
 .art-open {
-color:  #BB5139;     
+color:  grey;     
 }
 
 .top-nav {
 width: 100%;
 /*    background-color: red;*/
 height: 55px;
-margin: -8px auto 0 auto;
+margin: -15px auto 0 auto;
 /*    border: 1px solid red; */
 }
 
@@ -93,8 +100,8 @@ display: -webkit-flex;
 display: flex;
 width: 95%;
 /*    max-width: 1300px;*/
-align-items: baseline;
- -webkit-align-items: baseline;
+align-items: center;
+ -webkit-align-items: center;
 /*    justify-content: flex-start;*/
 margin: 0 auto;
 /*    background: green;*/
@@ -141,7 +148,7 @@ color: black;
 }
 
 .intro-title {
-font-size: 2.4em;   
+font-size: 2em;   
 }
 
 /*DROP DOWN MENU*/
@@ -303,7 +310,7 @@ font-size: 1em;
 
 #jorge-image {
  width: 45%;
-background: url(../images/IMG_2818.JPG) no-repeat center center;
+background: url(../images/s-f%20image.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -335,7 +342,7 @@ font-weight: bold;
 .art-dsc {
 font-weight: 400; 
 font-size: 1em;
-line-height: 1.5;    
+line-height: 1.6;    
     color: black;
 }
 
@@ -371,8 +378,7 @@ color: black;
 margin: 1em 0 2em 0;
 font-size: .9rem;
 text-align: left; 
-    
-    font-style: italic;
+color: black;
 }
 
 .email-inquiry img {
@@ -388,7 +394,7 @@ height: 12px;
 
 .contact {
 display: flex;   
-width: 85%;
+width: 70%;
 margin: 5em auto 0 auto;
 -webkit-align-self: center;
 align-self: center;  
@@ -402,15 +408,15 @@ margin: 0 auto;
 }
 
 .contact-w {
-width: 50%;   
+width: 60%;
 }
 .contact-w1 {
-width: 50%; 
-    padding-left: 5em;
+width: 40%; 
+padding-left: 6em;
 }
 
 .contact-w1 .art-dsc {
- max-width: 420px   
+ max-width: 290px   
     
 }
 
@@ -522,7 +528,7 @@ Landing Page Slideshow Styling and Images
 position: absolute;
 width: 100%;
 height: 100%;
-top: 60px;
+top: 40px;
 left: 0px;
 z-index: 0; 
 }
@@ -575,10 +581,10 @@ animation: titleAnimation 36s linear infinite 0s;
 }
 
 .cb-slideshow li:nth-child(1) span { 
-background-image: url(../images/Jorge%20EDITED-58.jpg) 
+background-image: url(../images/image1.jpg) 
 }
 .cb-slideshow li:nth-child(2) span { 
-background-image: url(../images/Jorge%20EDITED-38.jpg);
+background-image: url(../images/image2.jpg);
 -webkit-animation-delay: 5s;
 -moz-animation-delay: 5s;
 -o-animation-delay: 5s;
@@ -587,7 +593,7 @@ animation-delay: 5s;
 }
 
 .cb-slideshow li:nth-child(3) span { 
-background-image: url(../images/Jorge%20EDITED-39.jpg);
+background-image: url(../images/image3.jpg);
 -webkit-animation-delay: 11s;
 -moz-animation-delay: 11s;
 -o-animation-delay: 11s;
@@ -596,7 +602,7 @@ animation-delay: 11s;
 }
 
 .cb-slideshow li:nth-child(4) span { 
-background-image: url(../images/Jorge%20EDITED-50.jpg);
+background-image: url(../images/image4.jpg);
 -webkit-animation-delay: 17s;
 -moz-animation-delay: 17s;
 -o-animation-delay: 17s;
@@ -605,7 +611,7 @@ animation-delay: 17s;
 }
 
 .cb-slideshow li:nth-child(5) span { 
-background-image: url(../images/Jorge%20EDITED-55.jpg);
+background-image: url(../images/image1.jpg);
 -webkit-animation-delay: 23s;
 -moz-animation-delay: 23s;
 -o-animation-delay: 23s;
@@ -614,7 +620,7 @@ animation-delay: 23s;
 }
 
 .cb-slideshow li:nth-child(6) span { 
-background-image: url(../images/Jorge%20EDITED-58.jpg);
+background-image: url(../images/image2.jpg);
 -webkit-animation-delay: 29s;
 -moz-animation-delay: 29s;
 -o-animation-delay: 29s;
@@ -756,19 +762,12 @@ animation-timing-function: ease-out; }
 100% { opacity: 0 }
 }
 
-/* Show at least something when animations not supported */
+
 
 .no-cssanimations .cb-slideshow li span{
 opacity: 1;
 }
 
-/*
-@media screen and (max-width: 1140px) { 
-    .cb-slideshow li div h3 { font-size: 140px }
-}
-@media screen and (max-width: 600px) { 
-    .cb-slideshow li div h3 { font-size: 80px }
-}*/
 
 /*//////////////////////////////////////////////
 ////////////////////////////////////////////////
