@@ -33,18 +33,20 @@ Navigation and Links Styling
 ///////////////////////////////////////////////*/
 
 
-.top-nav {
+nav {
+
 width: 100%;
 z-index: 5000;
-  background: white;  
+  background: hsla(360, 100%, 100%, .9); 
+/*     margin-top: -838px;*/
 }
 
 .top-list {
 display: -webkit-flex;
 display: flex;
 width: 95%;
-align-items: baseline;
--webkit-align-items: baseline;
+align-items: center;
+-webkit-align-items: center;
 margin: 0 auto;
 
 
@@ -64,7 +66,8 @@ margin-right: auto;
 #arrow, #contact {
 height: 20px;
 width: 20px;
-
+margin: 0;
+    padding: 0;
 }
 
 
@@ -88,9 +91,10 @@ position: absolute;
 display: none;
 background: white;
 padding: 2px 0;
-border-radius: 4px;
 margin-left: -3.5em;
-    width: 8.5em;
+width: 8.5em;
+border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
 
@@ -100,6 +104,7 @@ padding: 0px;
 margin-left: 0;
 
 }
+/*
 
 .drop-nav li:last-child a {
  color: grey;   
@@ -108,10 +113,15 @@ margin-left: 0;
 .drop-nav li:last-child a:hover {
 border-bottom: 2px solid grey;   
 }
+*/
+
+.italics {
+ font-style: italic;
+}
 
 .drop-nav li {
-margin: 10px 0;
-    text-align: center;
+margin: 10px 0 10px 10px;
+    text-align: left;
 }
 
 .dropdown:hover > .drop-nav {
@@ -130,6 +140,31 @@ border-bottom: 2px solid black;
  color: grey;   
 }
 */
+
+/*////////////////////////////////////////////// 
+Opening Work Section
+///////////////////////////////////////////////*/
+
+header h1 {
+ text-align: center;
+  margin-bottom: 0;
+    padding: 0;
+}
+
+.mask { 
+height: 1px; 
+margin: 5em auto;
+width:75%; 
+border-radius: 1px;
+border-bottom: 1px solid #BCBCBC;
+}
+
+#clickMe {
+width: 90%;
+max-width: 900px;
+margin: 0 auto;
+cursor: url(../images/right-arrow-white.png), auto;
+}
 
 
 
@@ -193,7 +228,7 @@ width: 100%;
 height: 100%;
 top: 30px;
 left: 0;
-z-index: 0; 
+z-index: 0;
 }
 
 ul {
@@ -443,16 +478,39 @@ DESKTOP VERSION - MEDIA QUERIES
 
 @media only screen and (min-width: 800px) {
     
- .top-nav {
-position: fixed;
-
-     margin-top: -802px;
-} 
+nav {
+    position: fixed;
+background: white;
+     margin-top: -875px;
+}
+    
+nav.sticky {
+background: hsla(360, 100%, 100%, .75);  
+}
+    
+.drop-nav {
+background: hsla(360, 100%, 100%, .5);  
+}
     
     .cb-slideshow,
 .cb-slideshow:after { 
 
-top: 0;
+top: 10px;
 }
+    
+#arrow, #contact {
+height: 30px;
+width: 30px;
+    margin-top: 5px;
+}
+    
+    .dropdown:hover > .drop-nav {
+margin-top: 3px;
+
+}
+    .drop-nav {
+    margin-left: -.75em;
+    }
+    
   
 }
