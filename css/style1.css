@@ -33,7 +33,7 @@ Navigation and Links Styling
 ///////////////////////////////////////////////*/
 
 
-nav {
+.top-nav {
 
 width: 100%;
 z-index: 5000;
@@ -53,7 +53,7 @@ margin: 0 auto;
 }
 
 .top-list li {
- margin: 0 .75em;   
+ margin: 0 .75em; 
 }
 
 .top-list li:first-child {  
@@ -117,6 +117,7 @@ border-bottom: 2px solid grey;
 
 .italics {
  font-style: italic;
+    font-size: .85em;
 }
 
 .drop-nav li {
@@ -149,6 +150,7 @@ header h1 {
  text-align: center;
   margin-bottom: 0;
     padding: 0;
+    font-size: 2em;
 }
 
 .mask { 
@@ -161,7 +163,7 @@ border-bottom: 1px solid #BCBCBC;
 
 #clickMe {
 width: 90%;
-max-width: 900px;
+max-width: 700px;
 margin: 0 auto;
 cursor: url(../images/right-arrow-white.png), auto;
 }
@@ -183,14 +185,14 @@ SECTION BREAK _ IMAGES
 
 .cover {
 display: inherit;
-margin: 5em auto;
+margin: 10em auto;
 width: 100%;
-height: 75vh;
+height: 90vh;
 padding: 0;
     }
     
 #pic1 {
-     background: url(../images/image2.jpg) no-repeat center center;
+     background: url(../images/mangos.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -198,7 +200,7 @@ background-size: cover;
 }
 
 #pic2 {
-     background: url(../images/image3.jpg) no-repeat center center;
+     background: url(../images/Study%20in%20Red.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -206,7 +208,7 @@ background-size: cover;
 }
 
 #pic3 {
-     background: url(../images/image4.jpg) no-repeat center center;
+     background: url(../images/HawaiiSunset.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -214,7 +216,22 @@ background-size: cover;
 }
     
 
-
+#pic4 {
+     background: url(../images/FordIslandView.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;   
+}
+ 
+#pic5 {
+     background: url(../images/SubmarineDDS.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;   
+}
+ 
 
 
 /*////////////////////////////////////////////// 
@@ -478,11 +495,33 @@ DESKTOP VERSION - MEDIA QUERIES
 
 @media only screen and (min-width: 800px) {
     
-nav {
+/*////////////////////////////////////////////// 
+Navigation
+///////////////////////////////////////////////*/
+    
+.top-nav {
     position: fixed;
 background: white;
-     margin-top: -875px;
+     margin-top: -874px;
 }
+    
+/*  SAFARI TOP_NAV Margin FIX   */
+
+_::-webkit-full-page-media, _:future, :root .safari_only {
+margin-top: -900px;
+}
+    
+/*  Firefox TOP_NAV Margin FIX   */
+    
+@-moz-document url-prefix() { 
+  .top-nav {
+   margin-top: -865px;
+  }
+}
+    
+_:-o-prefocus, body:last-child .top-nav {
+margin-top: -900px;}
+       
     
 nav.sticky {
 background: hsla(360, 100%, 100%, .75);  
@@ -511,6 +550,18 @@ margin-top: 3px;
     .drop-nav {
     margin-left: -.75em;
     }
+    
+    
+
+/*////////////////////////////////////////////// 
+Opening Work Section
+///////////////////////////////////////////////*/
+
+header h1 {
+    font-size: 4em;
+    font-weight: 200;
+}
+
     
   
 }
