@@ -7,6 +7,7 @@ Type, Color, General Styling
 
 box-sizing: border-box;
 font-family: 'Istok Web', sans-serif;
+/*    border: 1px solid red;*/
 }
  
 img{
@@ -192,12 +193,80 @@ background: #FCFCFC;
     }
     
 
-.image-b {
+.image-b, .cover-description {
  width: 90%;   
    max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto -1.75em auto;
 }
- 
+
+
+.art-email, .social {
+ width: 20px;
+    height: 20px;
+ vertical-align: middle;
+}
+    .art-email {
+margin: 0;
+    margin-right: 6px;
+    display: inline-flex;
+       align-self: center;
+}
+
+.social {
+    margin: 0 6px;
+}
+
+.s-fix {
+ margin-right: 0;   
+}
+
+
+.flex-d {
+display: -webkit-flex;
+display: flex;
+align-items: baseline;
+-webkit-align-items: baseline;
+justify-content: space-between;
+-webkit-justify-content: space-between;
+}
+
+/*
+.justify {
+ align-items: baseline;
+-webkit-align-items: baseline;   
+}
+*/
+
+.flex-d h4 {
+ font-size: 1.5em;
+    margin: 0;
+}
+
+.price {
+ font-size: 1.5em; 
+    font-weight: bold;
+}
+
+.description {
+width: 100%;
+max-width: 400px; 
+margin: -2.25em 0 -.5em 0;
+padding: 0;
+color: grey;
+font-size: 1em; 
+}
+
+.email-price {
+ font-size: .85em;
+    font-style: italic;
+display: inline-flex;
+    color: grey;
+      align-self: center;
+    margin: 0;
+}
+
+
+
 
 
 /*////////////////////////////////////////////// 
@@ -468,7 +537,7 @@ Navigation
 .top-nav {
     position: fixed;
 background: white;
-     margin-top: -874px;
+     margin-top: -875px;
 }
     
 /*  SAFARI TOP_NAV Margin FIX   */
