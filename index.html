@@ -16,7 +16,7 @@
        <!-- Javascript-->
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.js"></script>
 <script src="interaction.js"></script>
-    
+<link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
     </head>
         <nav class="top-nav safari_only">
         <ul class="top-list">
@@ -64,8 +64,14 @@
             <div id="clickMe"><img id="myimage" src="images/image1.jpg" /></div>
    
     </header>  
-    <article class="cover" > <div class="image-b"><img src="images/mangos.jpg"></div>
-     <section class="cover-description">
+    <article class="cover" > 
+
+        <div class="image-b"><img src="images/mangos.jpg" class="fancybox" title="Basket of Mangoes"></div>
+        
+
+        
+        
+  <section class="cover-description">
          <div class="flex-d">
              <h4>Basket of Mangoes</h4>
              <p class="price">$425</p>
@@ -73,27 +79,49 @@
               <div class="description">
                   <p>Tissue Paper painting in an impressionistic style,Rittenhouse features a study of a basket of mangoes that she collected from a tree behind her house. 14.5 x 19 inches.</p>
         </div>
+         
          <div class="flex-d">
-<div><img src="images/contact.svg" class="art-email"><p class="email-price">Interested? Email Artist</p></div>
-<!--             <div><p class="email-price">Share</p><img src="images/twitter.svg" class="social"><img src="images/faceboo.svg" class="social s-fix"></div>-->
-             
+<div><img src="images/contact.svg" class="art-email"><p class="email-price">Interested in Purchasing? Email Artist</p></div>
+   
          </div>
             </section>
-
-    
+        
     </article>
     
-    <article class="cover"><div class="image-b"><img src="images/CaliforniaSunset.jpg"></div></article>
+    <article class="cover"><div class="image-b"><img src="images/CaliforniaSunset.jpg" class="fancybox" title="Image Caption Text"></div></article>
    
-    <article class="cover"><div class="image-b"><img src="images/HawaiiSunset.jpg"></div></article>
+    <article class="cover"><div class="image-b"><img src="images/HawaiiSunset.jpg" class="fancybox" title="Image Caption Text" ></div></article>
     
-    <article class="cover"><div class="image-b"><img src="images/FordIslandView.jpg"></div></article>
+    <article class="cover"><div class="image-b"><img src="images/FordIslandView.jpg" class="fancybox" title="Image Caption Text" ></div></article>
     
-    <article class="cover"> <div class="image-b"><img src="images/harborboats.jpg"></div></article>
+    <article class="cover"> <div class="image-b"><img src="images/harborboats.jpg" class="fancybox" title="Image Caption Text" ></div></article>
    
 
 <footer>Suzanne Frie Art&copy; 2015</footer>
     </div>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+<script type="text/javascript">
+    $(function($){
+        var addToAll = false;
+        var gallery = true;
+        var titlePosition = 'inside';
+        $(addToAll ? 'img' : 'img.fancybox').each(function(){
+            var $this = $(this);
+            var title = $this.attr('title');
+            var src = $this.attr('data-big') || $this.attr('src');
+            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+            $this.wrap(a);
+        });
+        if (gallery)
+            $('a.fancybox').attr('rel', 'fancyboxgallery');
+        $('a.fancybox').fancybox({
+            titlePosition: titlePosition
+        });
+    });
+    $.noConflict();
+</script>
     </body>
 
 </html>

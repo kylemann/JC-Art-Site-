@@ -1,4 +1,9 @@
 
+
+a.fancybox img:hover {
+    
+ cursor: url(../images/zoom.png), auto;   
+}
 /*////////////////////////////////////////////// 
 Type, Color, General Styling 
 ///////////////////////////////////////////////*/
@@ -185,31 +190,37 @@ SECTION BREAK _ IMAGES
 
 
 .cover {
-display: inherit;
 margin: 10em auto;
 width: 100%;
 background: #FCFCFC;
-    padding: 10em 0;
+padding: 10em 0;
     }
     
 
 .image-b, .cover-description {
  width: 90%;   
-   max-width: 800px;
-    margin: 0 auto -1.75em auto;
+max-width: 800px;
+
+}
+.cover-description {
+ margin: 0 auto;   
 }
 
+.image-b {
+margin: 0 auto -1.5em auto;  
+}
 
 .art-email, .social {
- width: 20px;
-    height: 20px;
- vertical-align: middle;
+width: 20px;
+height: 20px;
+vertical-align: middle;
 }
-    .art-email {
+.art-email {
 margin: 0;
-    margin-right: 6px;
-    display: inline-flex;
-       align-self: center;
+margin-right: 6px;
+display: inline-flex;
+align-self: center;
+-webkit-align-self: center;
 }
 
 .social {
@@ -230,12 +241,6 @@ justify-content: space-between;
 -webkit-justify-content: space-between;
 }
 
-/*
-.justify {
- align-items: baseline;
--webkit-align-items: baseline;   
-}
-*/
 
 .flex-d h4 {
  font-size: 1.5em;
