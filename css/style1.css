@@ -163,7 +163,7 @@ border-bottom: 1px solid #BCBCBC;
 
 #clickMe {
 width: 90%;
-max-width: 700px;
+max-width: 800px;
 margin: 0 auto;
 cursor: url(../images/right-arrow-white.png), auto;
 }
@@ -187,49 +187,15 @@ SECTION BREAK _ IMAGES
 display: inherit;
 margin: 10em auto;
 width: 100%;
-height: 90vh;
-padding: 0;
+background: #FCFCFC;
+    padding: 10em 0;
     }
     
-#pic1 {
-     background: url(../images/mangos.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;   
-}
 
-#pic2 {
-     background: url(../images/Study%20in%20Red.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;   
-}
-
-#pic3 {
-     background: url(../images/HawaiiSunset.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;   
-}
-    
-
-#pic4 {
-     background: url(../images/FordIslandView.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;   
-}
- 
-#pic5 {
-     background: url(../images/SubmarineDDS.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;   
+.image-b {
+ width: 90%;   
+   max-width: 800px;
+    margin: 0 auto;
 }
  
 
@@ -561,6 +527,19 @@ header h1 {
     font-size: 4em;
     font-weight: 200;
 }
+    
+/*//////////////////////////////////////////////
+////////////////////////////////////////////////
+
+SECTION BREAK _ IMAGES
+
+/////////////////////////////////////////////////
+///////////////////////////////////////////////*/
+
+
+.cover {
+    padding: 12em 0;
+    }
 
     
   
