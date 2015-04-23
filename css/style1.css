@@ -1,5 +1,6 @@
 
 
+
 a.fancybox img:hover {
     
  cursor: url(../images/zoom.png), auto;   
@@ -30,6 +31,15 @@ padding: 3px;
 text-align: center;
 font-size: .7em;
 color: grey;
+}
+
+.dollar {
+font-size: .65em;   
+vertical-align: super;
+}
+
+.each {
+font-size: .65em;
 }
 
 
@@ -152,6 +162,10 @@ border-bottom: 2px solid black;
 Opening Work Section
 ///////////////////////////////////////////////*/
 
+header {
+ padding: 0 0 12em 0;   
+}
+
 header h1 {
  text-align: center;
   margin-bottom: 0;
@@ -161,7 +175,7 @@ header h1 {
 
 .mask { 
 height: 1px; 
-margin: 5em auto;
+margin: 2.5em auto;
 width:75%; 
 border-radius: 1px;
 border-bottom: 1px solid #BCBCBC;
@@ -170,7 +184,7 @@ border-bottom: 1px solid #BCBCBC;
 #clickMe {
 width: 90%;
 max-width: 800px;
-margin: 0 auto;
+margin: 1em auto;
 cursor: url(../images/right-arrow-white.png), auto;
 }
 
@@ -190,10 +204,10 @@ SECTION BREAK _ IMAGES
 
 
 .cover {
-margin: 10em auto;
+margin: 0 auto;
 width: 100%;
 background: #FCFCFC;
-padding: 10em 0;
+padding: 5em 0;
     }
     
 
@@ -210,17 +224,20 @@ max-width: 800px;
 margin: 0 auto -1.5em auto;  
 }
 
-.art-email, .social {
-width: 20px;
-height: 20px;
-vertical-align: middle;
-}
+
 .art-email {
+width: 1.35em;
+height: 1.35em;
+vertical-align: middle;
 margin: 0;
 margin-right: 6px;
+    display: inline;
+/*
 display: inline-flex;
-align-self: center;
--webkit-align-self: center;
+display: -webkit-inline-flex
+align-self: baseline;
+-webkit-align-self: baseline;
+*/
 }
 
 .social {
@@ -233,10 +250,10 @@ align-self: center;
 
 
 .flex-d {
-display: -webkit-flex;
 display: flex;
-align-items: baseline;
--webkit-align-items: baseline;
+display: -webkit-flex;
+align-items: center;
+-webkit-align-items: center;
 justify-content: space-between;
 -webkit-justify-content: space-between;
 }
@@ -249,28 +266,104 @@ justify-content: space-between;
 
 .price {
  font-size: 1.5em; 
-    font-weight: bold;
+margin-top: .85em;
+    font-weight: normal;
+}
+
+.price-d {
+   font-size: 1.5em; 
+text-align: center;
 }
 
 .description {
 width: 100%;
-max-width: 400px; 
+max-width: 405px; 
 margin: -2.25em 0 -.5em 0;
 padding: 0;
 color: grey;
 font-size: 1em; 
 }
 
+.description2 {
+width: 90%;
+max-width: 405px; 
+margin: 0 auto;
+padding: 0;
+color: grey;
+font-size: 1em; 
+}
+
 .email-price {
- font-size: .85em;
+ font-size: .9em;
     font-style: italic;
 display: inline-flex;
     color: grey;
       align-self: center;
-    margin: 0;
+    margin: .1em;
+    text-align: center;
+}
+
+.georgia {
+font-family: Georgia, Times, 'Times New Roman', serif;  
+}
+
+.flex-d a:hover  {
+border-bottom: 1px solid grey;   
+}
+
+/*//////////////////////////////////////////////
+////////////////////////////////////////////////
+
+Gallery Styling - General
+
+/////////////////////////////////////////////////
+///////////////////////////////////////////////*/
+
+
+.gallery {
+    margin: 0 auto;
+padding: 5em 0;
+width: 90%;
+max-width: 1250px;
+}
+
+.gallery-intro {
+ margin: 0 auto 0 auto;
+    width: 90%;
+    max-width: 1250px;
+}
+
+.art-layout {
+ display: flex;
+display: -webkit-flex;
+align-items: center;
+-webkit-align-items: center;
+/*
+justify-content: space-between;
+-webkit-justify-content: space-between;
+*/
+justify-content: center;
+-webkit-justify-content: center;
+flex-direction: column;
+
+}
+
+.quilt, .kieki {
+   margin: 1em 0;
+max-width: 300px;
 }
 
 
+
+.art-layout h4 {
+ font-size: 1.5em;
+    margin: 0;
+    text-align: center;
+}
+
+.center {
+justify-content: center;
+}
 
 
 
@@ -283,21 +376,15 @@ Landing Page Slideshow Styling and Images
 position: absolute;
 width: 100%;
 height: 100%;
-top: 30px;
+top: 0;
 left: 0;
-z-index: 0;
+z-index: -1;
 }
 
 ul {
 list-style: none;     
 }
 
-.cb-slideshow:after { 
-/*
-    content: '';
-    background: transparent url(../images/pattern.png) repeat top left; 
-*/
-}
 
 .cb-slideshow li span { 
 width: 100%;
@@ -319,109 +406,56 @@ z-index: 0;
 animation: imageAnimation 36s linear infinite 0s; 
 }
 
-.cb-slideshow li div { 
-z-index: 1000;
-position: absolute;
-bottom: 30px;
-left: 0px;
-width: 100%;
-text-align: center;
-opacity: 0;
-color: #fff;
--webkit-animation: titleAnimation 36s linear infinite 0s;
--moz-animation: titleAnimation 36s linear infinite 0s;
--o-animation: titleAnimation 36s linear infinite 0s;
--ms-animation: titleAnimation 36s linear infinite 0s;
-animation: titleAnimation 36s linear infinite 0s; 
-}
+/* Opening Slideshow Images and Delay settings */
 
 .cb-slideshow li:nth-child(1) span { 
-background-image: url(../images/image1.jpg) 
+background-image: url(../images/nude.jpg) 
 }
 .cb-slideshow li:nth-child(2) span { 
-background-image: url(../images/image2.jpg);
--webkit-animation-delay: 5s;
--moz-animation-delay: 5s;
--o-animation-delay: 5s;
--ms-animation-delay: 5s;
-animation-delay: 5s; 
+background-image: url(../images/image3.jpg);
+-webkit-animation-delay: 3s;
+-moz-animation-delay: 3s;
+-o-animation-delay: 3s;
+-ms-animation-delay: 3s;
+animation-delay: 3s; 
 }
 
 .cb-slideshow li:nth-child(3) span { 
-background-image: url(../images/image3.jpg);
--webkit-animation-delay: 11s;
--moz-animation-delay: 11s;
--o-animation-delay: 11s;
--ms-animation-delay: 11s;
-animation-delay: 11s; 
+background-image: url(../images/Study%20in%20Red.jpg);
+-webkit-animation-delay: 9s;
+-moz-animation-delay: 9s;
+-o-animation-delay: 9s;
+-ms-animation-delay: 9s;
+animation-delay: 9s; 
 }
 
 .cb-slideshow li:nth-child(4) span { 
-background-image: url(../images/image4.jpg);
--webkit-animation-delay: 17s;
--moz-animation-delay: 17s;
--o-animation-delay: 17s;
--ms-animation-delay: 17s;
-animation-delay: 17s; 
+background-image: url(../images/SubmarineDDS.jpg);
+-webkit-animation-delay: 15s;
+-moz-animation-delay: 15s;
+-o-animation-delay: 15s;
+-ms-animation-delay: 15s;
+animation-delay: 15s; 
 }
 
 .cb-slideshow li:nth-child(5) span { 
 background-image: url(../images/image1.jpg);
--webkit-animation-delay: 23s;
--moz-animation-delay: 23s;
--o-animation-delay: 23s;
--ms-animation-delay: 23s;
-animation-delay: 23s; 
+-webkit-animation-delay: 21s;
+-moz-animation-delay: 21s;
+-o-animation-delay: 21s;
+-ms-animation-delay: 21s;
+animation-delay: 21s; 
 }
 
 .cb-slideshow li:nth-child(6) span { 
-background-image: url(../images/image2.jpg);
--webkit-animation-delay: 29s;
--moz-animation-delay: 29s;
--o-animation-delay: 29s;
--ms-animation-delay: 29s;
-animation-delay: 29s; 
+background-image: url(../images/CloudStudy.jpg);
+-webkit-animation-delay: 27s;
+-moz-animation-delay: 27s;
+-o-animation-delay: 27s;
+-ms-animation-delay: 27s;
+animation-delay: 27s; 
 }
 
-.cb-slideshow li:nth-child(2) div { 
--webkit-animation-delay: 5s;
--moz-animation-delay: 5s;
--o-animation-delay: 5s;
--ms-animation-delay: 5s;
-animation-delay: 5s; 
-}
-
-.cb-slideshow li:nth-child(3) div { 
--webkit-animation-delay: 11s;
--moz-animation-delay: 11s;
--o-animation-delay: 11s;
--ms-animation-delay: 11s;
-animation-delay: 11s; 
-}
-
-.cb-slideshow li:nth-child(4) div { 
--webkit-animation-delay: 17s;
--moz-animation-delay: 17s;
--o-animation-delay: 17s;
--ms-animation-delay: 17s;
-animation-delay: 17s; 
-}
-
-.cb-slideshow li:nth-child(5) div { 
--webkit-animation-delay: 23s;
--moz-animation-delay: 23s;
--o-animation-delay: 23s;
--ms-animation-delay: 23s;
-animation-delay: 23s; 
-}
-
-.cb-slideshow li:nth-child(6) div { 
--webkit-animation-delay: 29s;
--moz-animation-delay: 29s;
--o-animation-delay: 29s;
--ms-animation-delay: 29s;
-animation-delay: 29s; 
-}
 
 /* Animation for the slideshow images */
 
@@ -527,6 +561,55 @@ opacity: 1;
 ////////////////////////////////////////////////
 ////////////////////////////////////////////////
 
+TABLET VERSION - MEDIA QUERIES
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+///////////////////////////////////////////////*/
+
+@media only screen and (min-width: 700px) {
+        
+    
+    /*//////////////////////////////////////////////
+////////////////////////////////////////////////
+
+Gallery Styling - General
+
+/////////////////////////////////////////////////
+///////////////////////////////////////////////*/
+
+.gallery {
+   padding: 8em 0; 
+    max-width: 900px;
+}
+
+.quilt {
+ margin: 1em 5px;
+    width: 33.3333333%;
+    max-width: 200px;
+}
+    
+.kieki {
+ margin: 1em 5px;
+    width: 50%;
+    max-width: 300px;
+    
+}
+
+.art-layout {
+flex-direction: row;
+  flex-wrap: wrap;  
+  
+}
+    
+}
+
+
+
+/*//////////////////////////////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+
 DESKTOP VERSION - MEDIA QUERIES
 
 ////////////////////////////////////////////////
@@ -571,10 +654,9 @@ background: hsla(360, 100%, 100%, .75);
 background: hsla(360, 100%, 100%, .5);  
 }
     
-    .cb-slideshow,
-.cb-slideshow:after { 
+    .cb-slideshow { 
 
-top: 10px;
+top: 30px;
 }
     
 #arrow, #contact {
@@ -596,12 +678,25 @@ margin-top: 3px;
 /*////////////////////////////////////////////// 
 Opening Work Section
 ///////////////////////////////////////////////*/
-
+header {
+ padding-top: 2.25em;   
+}
 header h1 {
     font-size: 4em;
     font-weight: 200;
+line-height: 0;
+}
+
+    
+#clickMe {
+margin: auto;
 }
     
+.mask {
+ margin: 6em auto;   
+}
+    
+  
 /*//////////////////////////////////////////////
 ////////////////////////////////////////////////
 
@@ -614,7 +709,82 @@ SECTION BREAK _ IMAGES
 .cover {
     padding: 12em 0;
     }
-
     
+        /*//////////////////////////////////////////////
+////////////////////////////////////////////////
+
+Gallery Styling - General
+
+/////////////////////////////////////////////////
+///////////////////////////////////////////////*/
+
+.gallery {
+   padding: 12em 0; 
+    max-width: 1250px;
+
+}
+
+.quilt {
+margin: 1em 7em;
+/*width: 33.3333333%;*/
+max-width: 300px;
+}
+    
+.top {
+ margin-top: 6em;   
+}
+    
+.kieki {
+ margin: 1em 5em;
+    width: 50%;
+    max-width: 400px;
+    
+}
+    
+.kieki-w {
+ display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+ 
+}
+    
+    
+    .gallery-intro {
+    
+     display: flex;
+display: -webkit-flex;
+align-items: flex-start;
+justify-content: space-between;
+-webkit-justify-content: space-between;
+    }
+    
+    .space-around {
+        
+   justify-content: space-around;
+-webkit-justify-content: space-around;          
+   
+    }
+    
+.gallery-intro h3, .text-intro {
+    margin: 0;
+    width: 50%;
+}
+.gallery-intro h3 {
+font-size: 3em; 
+line-height: 1.9;
   
+}
+    
+.text-intro {
+font-size: 1.1em;
+line-height: 1.85;
+margin: 0 auto;
+max-width: 625px;
+    padding: 0;
+  font-weight: lighter;
+}
+    
+    
+
 }
