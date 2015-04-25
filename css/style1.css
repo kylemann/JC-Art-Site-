@@ -42,6 +42,10 @@ vertical-align: super;
 font-size: .65em;
 }
 
+#work {
+margin-top: 105vh;  
+}
+
 
 
 /*////////////////////////////////////////////// 
@@ -296,9 +300,11 @@ font-size: 1em;
 .email-price {
  font-size: .9em;
     font-style: italic;
+    display: -webkit-inline-flex;
 display: inline-flex;
+    vertical-align: middle;
     color: grey;
-      align-self: center;
+
     margin: .1em;
     text-align: center;
 }
@@ -344,6 +350,7 @@ justify-content: space-between;
 */
 justify-content: center;
 -webkit-justify-content: center;
+    -webkit-flex-direction: column; /* Safari 6.1+ */
 flex-direction: column;
 
 }
@@ -363,6 +370,7 @@ max-width: 300px;
 
 .center {
 justify-content: center;
+    -webkit-justify-content: center;
 }
 
 
@@ -409,51 +417,51 @@ animation: imageAnimation 36s linear infinite 0s;
 /* Opening Slideshow Images and Delay settings */
 
 .cb-slideshow li:nth-child(1) span { 
-background-image: url(../images/nude.jpg) 
+background-image: url(../images/Study%20in%20Red.jpg) 
 }
 .cb-slideshow li:nth-child(2) span { 
 background-image: url(../images/image3.jpg);
--webkit-animation-delay: 3s;
--moz-animation-delay: 3s;
--o-animation-delay: 3s;
--ms-animation-delay: 3s;
-animation-delay: 3s; 
+-webkit-animation-delay: 4s;
+-moz-animation-delay: 4s;
+-o-animation-delay: 4s;
+-ms-animation-delay: 4s;
+animation-delay: 4s; 
 }
 
 .cb-slideshow li:nth-child(3) span { 
-background-image: url(../images/Study%20in%20Red.jpg);
--webkit-animation-delay: 9s;
--moz-animation-delay: 9s;
--o-animation-delay: 9s;
--ms-animation-delay: 9s;
-animation-delay: 9s; 
+background-image: url(../images/nude.jpg);
+-webkit-animation-delay: 10s;
+-moz-animation-delay: 10s;
+-o-animation-delay: 10s;
+-ms-animation-delay: 10s;
+animation-delay: 10s; 
 }
 
 .cb-slideshow li:nth-child(4) span { 
 background-image: url(../images/SubmarineDDS.jpg);
--webkit-animation-delay: 15s;
--moz-animation-delay: 15s;
--o-animation-delay: 15s;
--ms-animation-delay: 15s;
-animation-delay: 15s; 
+-webkit-animation-delay: 16s;
+-moz-animation-delay: 16s;
+-o-animation-delay: 16s;
+-ms-animation-delay: 16s;
+animation-delay: 16s; 
 }
 
 .cb-slideshow li:nth-child(5) span { 
 background-image: url(../images/image1.jpg);
--webkit-animation-delay: 21s;
--moz-animation-delay: 21s;
--o-animation-delay: 21s;
--ms-animation-delay: 21s;
-animation-delay: 21s; 
+-webkit-animation-delay: 22s;
+-moz-animation-delay: 22s;
+-o-animation-delay: 22s;
+-ms-animation-delay: 22s;
+animation-delay: 22s; 
 }
 
 .cb-slideshow li:nth-child(6) span { 
 background-image: url(../images/CloudStudy.jpg);
--webkit-animation-delay: 27s;
--moz-animation-delay: 27s;
--o-animation-delay: 27s;
--ms-animation-delay: 27s;
-animation-delay: 27s; 
+-webkit-animation-delay: 28s;
+-moz-animation-delay: 28s;
+-o-animation-delay: 28s;
+-ms-animation-delay: 28s;
+animation-delay: 28s; 
 }
 
 
@@ -597,9 +605,11 @@ Gallery Styling - General
 }
 
 .art-layout {
+-webkit-flex-direction: row; /* Safari 6.1+ */
 flex-direction: row;
-  flex-wrap: wrap;  
-  
+
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
     
 }
@@ -622,6 +632,12 @@ DESKTOP VERSION - MEDIA QUERIES
 Navigation
 ///////////////////////////////////////////////*/
     
+    
+    #work {
+margin-top: 120vh;  
+}
+
+    
 .top-nav {
     position: fixed;
 background: white;
@@ -630,7 +646,7 @@ background: white;
     
 /*  SAFARI TOP_NAV Margin FIX   */
 
-_::-webkit-full-page-media, _:future, :root .safari_only {
+    _::-webkit-full-page-media, _:future, :root .safari_only {
 margin-top: -900px;
 }
     
@@ -729,6 +745,17 @@ margin: 1em 7em;
 /*width: 33.3333333%;*/
 max-width: 300px;
 }
+
+    #special-p {
+     max-width: 900px;   
+     margin: 1em 1em 5em 1em;   
+    }
+    
+    
+    /*  SAFARI MAX Width Change - Browser not complying with Flex-Wrap   */
+  _::-webkit-full-page-media, _:future, :root .quilt {
+max-width: 500px;
+}
     
 .top {
  margin-top: 6em;   
@@ -737,7 +764,7 @@ max-width: 300px;
 .kieki {
  margin: 1em 5em;
     width: 50%;
-    max-width: 400px;
+    max-width: 300px;
     
 }
     
