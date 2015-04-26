@@ -20,7 +20,9 @@
 <script src="interaction.js"></script>
         		<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
     </head>
-        <nav class="top-nav safari_only">
+       
+    
+    <nav class="top-nav safari_only">
         <ul class="top-list">
                 <li><a href="about.html"><span class="intro-title">Rittenhouse</span> | ART</a>                   </li>
            
@@ -28,14 +30,13 @@
                <img src="images/down-arrow.svg" id="arrow">
                         <ul class="drop-nav">
                                 <li><a href="#new"></a></li>
+                              <li><a href="#about"  class="grey">About</a></li>
                             <li> <a href="#work">Work</a></li> 
                                  <li><a href="#parasol" class="italics">&nbsp;Parasol Series</a></li>
                              <li><a href="#chevron" class="italics">&nbsp;Chevron Series</a></li>
                             <li><a href="#quilt" class="italics">&nbsp;Quilt Collection</a></li>
                                 <li><a href="#keiki" class="italics">&nbsp;Keiki Collection</a></li>
-                       
-                                <li><a href="#about"  class="grey">About</a></li>
-                            <li><a href="#past"  class="grey">Contact</a></li>
+                            <li><a href="#contact"  class="grey">Contact</a></li>
                                 
                         </ul>
                         </li>
@@ -65,8 +66,8 @@
     <div class="mask"></div>
            
             <div id="clickMe"><img id="myimage" src="images/image1.jpg" /></div>
-             <div class="mask"></div>
-     <section class="gallery-intro" id="about">
+             <div class="mask" id="about"></div>
+     <section class="gallery-intro">
     <h3>About the Artist</h3>
         <div class="text-intro">
     <p>Suzanne Frie, currently based in Hawaii, is a primarily self-taught American artist that signs all work by her middle "old family" name of Rittenhouse. The artist is well versed in various mediums like water color, oil, and acylic, but has refined her skill in the use of tissue paper to create a body of work that mimics such artists as John Singer Sargent, Claude Monet, John While Alexander and other impressionists.</p> 
@@ -108,25 +109,25 @@
     </section>
      <div class="mask"></div>
     <section class="art-layout">
-    <div  id="special-p">
-        <img src="images/parosol/Emilyrecline.jpg" class="fancybox" title="Quilt Series: Chevron | $775"> 
+    <div  class="special-p">
+        <img src="images/parosol/Emilyrecline.jpg" data-big="images/parosol/Emilyrecline-big.jpg" class="fancybox" title="Emily Recline"> 
             <h4>Emily Recline</h4>         
         </div>
       
         
         
-        <div class="quilt"><img src="images/parosol/Emma.jpg" class="fancybox" title="Quilt Series: Stripes | $775">
-            <h4>Sandes</h4> 
+        <div class="quilt"><img src="images/parosol/Emma.jpg" data-big="images/parosol/Emma-big.jpg" class="fancybox" title="Emma | $775">
+            <h4>Emma</h4> 
         </div>
         
-                 <div class="quilt top"><img src="images/parosol/Hannah%20Red.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
-          <h4>Rasberry</h4>
+                 <div class="quilt top"><img src="images/parosol/Hannah%20Red.jpg" data-big="images/parosol/Hannah%20Red.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
+          <h4>Hannah in Red</h4>
               </div>
-                 <div class="quilt top"><img src="images/parosol/HannahRed2.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
-          <h4>Kaleidescope</h4>
+                 <div class="quilt top"><img src="images/parosol/HannahRed2.jpg" data-big="images/parosol/HannahRed2-big.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
+          <h4>Hannah in Red</h4>
               </div>
-          <div class="quilt top"><img src="images/parosol/Emma2.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
-          <h4>Teal</h4>
+          <div class="quilt top"><img src="images/parosol/Emma2.jpg" data-big="images/parosol/Emma2-big.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
+          <h4>Emma Parasol</h4>
               </div>
             
     </section>
@@ -142,7 +143,7 @@
     <article class="cover" > 
 
         <div class="image-b">
-            <img src="images/mangos.jpg" class="fancybox" title="Basket of Mangoes | $425">
+            <img src="images/mangos.jpg" data-big="images/mangos-big.jpg" class="fancybox" title="Basket of Mangoes | $425">
         </div>
         
 
@@ -176,48 +177,49 @@
     </section>
      <div class="mask"></div>
     <section class="art-layout">
+                    <div class="special-p2"><img src="images/chevron.series/ChevronTeal.jpg" data-big="images/chevron.series/ChevronTeal-big.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
+          <h4>Teal</h4>
+              </div>
     <div class="quilt">
-        <img src="images/chevron.series/BlackWhiteChevron.jpg" class="fancybox" title="Quilt Series: Chevron | $775"> 
+        <img src="images/chevron.series/BlackWhiteChevron.jpg" data-big="images/chevron.series/BlackWhiteChevron-BIG.jpg" class="fancybox" title="Quilt Series: Chevron | $775"> 
             <h4>Black and White</h4>         
         </div>
       
         
         
-        <div class="quilt"><img src="images/chevron.series/ChevronSands.jpg" class="fancybox" title="Quilt Series: Stripes | $775">
-            <h4>Sandes</h4> 
+        <div class="quilt"><img src="images/chevron.series/ChevronSands.jpg" data-big="images/chevron.series/ChevronSands-BIG.jpg" class="fancybox" title="Quilt Series: Stripes | $775">
+            <h4>Sands</h4> 
         </div>
-            <div class="quilt top"><img src="images/chevron.series/ChevronTeal%20(1).jpg" class="fancybox" title="Quilt Series: Plaid | $775">
-          <h4>Teal</h4>
-              </div>
-                 <div class="quilt top"><img src="images/chevron.series/ChevronRasberry.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
-          <h4>Rasberry</h4>
-              </div>
-                 <div class="quilt top"><img src="images/chevron.series/ChevronRainbow.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
+
+                 <div class="quilt top"><img src="images/chevron.series/ChevronRainbow.jpg" data-big="images/chevron.series/ChevronRainbow-BIG.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
           <h4>Kaleidescope</h4>
               </div>
-             <div class="quilt top"><img src="images/chevron.series/ChevronHunter.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
+             <div class="quilt top"><img src="images/chevron.series/ChevronHunter.jpg" data-big="images/chevron.series/ChevronHunter-BIG.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
           <h4>Hunter Green</h4>
               </div>
-        <div class="quilt top"><img src="images/chevron.series/ChevronCircus.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
-          <h4>Circus</h4>
-              </div>
-        <div class="quilt top"><img src="images/chevron.series/ChevronBlueOrange.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
+        <div class="quilt top"><img src="images/chevron.series/ChevronBlueOrange.jpg" data-big="images/chevron.series/ChevronBlueOrange-BIG.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
           <h4>Blue and Orange</h4>
               </div>
-        <div class="quilt top"><img src="images/chevron.series/RedChevron.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
+        <div class="quilt top"><img src="images/chevron.series/RedChevron.jpg" data-big="images/chevron.series/RedChevron-BIG.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
           <h4>Red</h4>
               </div>
-        <div class="quilt top"><img src="images/chevron.series/ChevronPurple.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
+           <div class="special-p3"><img src="images/chevron.series/ChevronRasberry.jpg" data-big="images/chevron.series/ChevronRasberry-BIG.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
+          <h4>Rasberry</h4>
+              </div>
+        <div class="quilt top"><img src="images/chevron.series/ChevronPurple.jpg" data-big="images/chevron.series/ChevronPurple-BIG.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
           <h4>Purple</h4>
               </div>
-        <div class="quilt top"><img src="images/chevron.series/MulitGreenChevron.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
+        <div class="quilt top"><img src="images/chevron.series/MulitGreenChevron.jpg" data-big="images/chevron.series/MulitGreenChevron-BIG.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
           <h4>Green</h4>
               </div>
-        <div class="quilt top"><img src="images/chevron.series/GoldBrownChevron.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
+        <div class="quilt top"><img src="images/chevron.series/GoldBrownChevron.jpg" data-big="images/chevron.series/GoldBrownChevron-BIG.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
           <h4>Gold + Brown</h4>
               </div>
-        <div class="quilt top"><img src="images/chevron.series/ChevronRainbow.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
+        <div class="quilt top"><img src="images/chevron.series/ChevronRainbow.jpg" data-big="images/chevron.series/ChevronRainbow-BIG.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
           <h4>Rainbow</h4>
+              </div>
+         <div class="special-p3"><img src="images/chevron.series/ChevronCircus.jpg" data-big="images/chevron.series/ChevronCircus-BIG.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
+          <h4>Circus</h4>
               </div>
     </section>
        <div class="mask"></div>
@@ -230,7 +232,7 @@
     <article class="cover">
         
         <div class="image-b">
-            <img src="images/CaliforniaSunset.jpg" class="fancybox" title="California Sunset | $300">
+            <img src="images/CaliforniaSunset.jpg" data-big="images/CaliforniaSunset-big.jpg" class="fancybox" title="California Sunset | $300">
         </div>
     
       <section class="cover-description">
@@ -262,16 +264,16 @@
      <div class="mask"></div>
     <section class="art-layout">
     <div class="quilt">
-        <img src="images/quilt/Babyquiltchevron.jpg" class="fancybox" title="Quilt Series: Chevron | $775"> 
+        <img src="images/quilt/Babyquiltchevron.jpg" data-big="images/quilt/Babyquiltchevron-BIG.jpg" class="fancybox" title="Quilt Series: Chevron | $775"> 
             <h4>Chevron</h4>         
         </div>
       
         
         
-        <div class="quilt"><img src="images/quilt/Babyquiltstripes.jpg" class="fancybox" title="Quilt Series: Stripes | $775">
+        <div class="quilt"><img src="images/quilt/Babyquiltstripes.jpg" data-big="images/quilt/Babyquiltstripes-BIG.jpg" class="fancybox" title="Quilt Series: Stripes | $775">
             <h4>Stripes</h4> 
         </div>
-            <div class="quilt top"><img src="images/quilt/Babyquiltplaid.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
+            <div class="quilt top"><img src="images/quilt/Babyquiltplaid.jpg" data-big="images/quilt/Babyquiltplaid-BIG.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
           <h4>Plaid</h4>
               </div>
         
@@ -288,7 +290,7 @@
     <article class="cover">
         
         
-        <div class="image-b"><img src="images/HawaiiSunset.jpg" class="fancybox" title="Hawaiian Sunset | $425" ></div>
+        <div class="image-b"><img src="images/HawaiiSunset.jpg" data-big="images/HawaiiSunset-BIG.jpg" class="fancybox" title="Hawaiian Sunset | $425" ></div>
     
       <section class="cover-description">
          <div class="flex-d">
@@ -320,7 +322,7 @@
 
         
         
-        <div class="kieki"><img src="images/kieki/KeikiThree.jpg" class="fancybox" title="Quilt Series: Stripes | $775">
+        <div class="kieki"><img src="images/kieki/KeikiThree.jpg" data-big="images/kieki/KeikiThree-BIG.jpg" class="fancybox" title="Quilt Series: Stripes | $775">
             <h4>Stripes</h4>
             <div class="description2">
                   <p>Tissue paper painting of a sunset in Southern California near San Diego.  Tissue paper painting is permanently mounted on press board. <span class="georgia">14 &frac12;" x 19"</span></p>
@@ -328,20 +330,20 @@
         </div>
         
      
-            <div class="kieki"><img src="images/kieki/KeikiTwo.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
+            <div class="kieki"><img src="images/kieki/KeikiTwo.jpg" data-big="images/kieki/KeikiTwo-BIG.jpg" class="fancybox" title="Quilt Series: Plaid | $775">
           <h4>Plaid</h4>
             <div class="description2">
                   <p>Tissue paper painting of a sunset in Southern California near San Diego.  Tissue paper painting is permanently mounted on press board. <span class="georgia">14 &frac12;" x 19"</span></p>
         </div>
               </div>
-        <div class="kieki top"><img src="images/kieki/KeikiFour.jpg" class="fancybox" title="Quilt Series: Stripes | $775">
+        <div class="kieki top"><img src="images/kieki/KeikiFour.jpg" data-big="images/kieki/KeikiFour-BIG.jpg" class="fancybox" title="Quilt Series: Stripes | $775">
             <h4>Stripes</h4>
             <div class="description2">
                   <p>Tissue paper painting of a sunset in Southern California near San Diego.  Tissue paper painting is permanently mounted on press board. <span class="georgia">14 &frac12;" x 19"</span></p>
         </div>
         </div>
           <div class="kieki top">
-        <img src="images/kieki/KeikiOne.jpg" class="fancybox" title="Quilt Series: Chevron | $775"> 
+        <img src="images/kieki/KeikiOne.jpg" data-big="images/kieki/KeikiOne-BIG.jpg" class="fancybox" title="Quilt Series: Chevron | $775"> 
             <h4>Chevron</h4>
           <div class="description2">
                   <p>Tissue paper painting of a sunset in Southern California near San Diego.  Tissue paper painting is permanently mounted on press board. <span class="georgia">14 &frac12;" x 19"</span></p>
@@ -360,7 +362,7 @@
     <article class="cover">
         
         
-        <div class="image-b"><img src="images/FordIslandView.jpg" class="fancybox" title="View from Ford Island | $425" ></div>
+        <div class="image-b"><img src="images/FordIslandView.jpg" data-big="images/FordIslandView-BIG.jpg" class="fancybox" title="View from Ford Island | $425" ></div>
     
       <section class="cover-description">
          <div class="flex-d">
@@ -380,7 +382,16 @@
     
     
     </article>
+    <article class="gallery">
     
+     <section class="gallery-intro">
+    <h3>Contact</h3>
+        <div class="contact">
+    <p><img src="images/phone.svg" class="art-email">360-536-5660</p>
+            <p><img src="images/contact.svg" class="art-email"><a href="mailto:rittenhousef@yahoo.com?Subject=Ford%20Island%20Inquiry" target="_top">rittenhousef@yahoo.com</a></p>
+            </div>
+    </section>
+    </article>
 
    
 

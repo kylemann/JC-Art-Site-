@@ -641,7 +641,7 @@ margin-top: 120vh;
 .top-nav {
     position: fixed;
 background: white;
-     margin-top: -875px;
+     margin-top: -825px;
 }
     
 /*  SAFARI TOP_NAV Margin FIX   */
@@ -654,7 +654,7 @@ margin-top: -900px;
     
 @-moz-document url-prefix() { 
   .top-nav {
-   margin-top: -865px;
+   margin-top: -867px;
   }
 }
     
@@ -746,16 +746,22 @@ margin: 1em 7em;
 max-width: 300px;
 }
 
-    #special-p {
+.special-p {
      max-width: 900px;   
-     margin: 1em 1em 5em 1em;   
+     margin: 1em 1em 3em 1em;   
     }
     
+.special-p2 {
+     max-width: 700px;   
+     margin: 1em 1em 3em 1em;   
+    }
     
-    /*  SAFARI MAX Width Change - Browser not complying with Flex-Wrap   */
-  _::-webkit-full-page-media, _:future, :root .quilt {
-max-width: 500px;
-}
+    .special-p3 {
+     max-width: 700px;   
+   margin: 6em 1em 3em 1em;  
+    }
+    
+
     
 .top {
  margin-top: 6em;   
@@ -788,7 +794,7 @@ justify-content: space-between;
     
     .space-around {
         
-   justify-content: space-around;
+justify-content: space-around;
 -webkit-justify-content: space-around;          
    
     }
@@ -810,6 +816,22 @@ margin: 0 auto;
 max-width: 625px;
     padding: 0;
   font-weight: lighter;
+}
+    
+.contact {
+    width: 50%;
+ max-width: 625px;
+    padding: 0;
+
+}
+    
+.contact p {
+font-size: 1.5em;
+line-height: 2;
+}
+    
+    .contact a:hover  {
+border-bottom: 2px solid black;   
 }
     
     
