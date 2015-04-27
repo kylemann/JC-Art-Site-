@@ -12,8 +12,10 @@ Type, Color, General Styling
 * {
 
 box-sizing: border-box;
-font-family: 'Istok Web', sans-serif;
+/*font-family: 'Istok Web', sans-serif;*/
 /*    border: 1px solid red;*/
+    font-family: 'Whitney SSm A', 'Whitney SSm B';
+/*    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
 }
  
 img{
@@ -22,7 +24,7 @@ img{
 
 .first::first-line {
  font-weight: bold; 
-    color: black
+    color: black;
 }
 
 
@@ -76,6 +78,11 @@ margin: 0 auto;
  margin: 0 .75em; 
 }
 
+.small-caps {
+  font-variant: small-caps; 
+    font-weight: 400;
+}
+
 .top-list li:first-child {  
 padding: .5em 0px;
 margin-left: -1.75em;
@@ -98,7 +105,8 @@ color: black;
 }
 
 .intro-title {
-font-size: 1.5em;   
+font-size: 1.5em; 
+     font-weight: 400;
 }
 
 /*DROP DOWN MENU*/
@@ -152,7 +160,7 @@ display:block;
 z-index: 3000;
 }
 
-.drop-nav li a:hover  {
+.top-nav li a:hover  {
 border-bottom: 2px solid black;   
 }
 
@@ -175,6 +183,8 @@ header h1 {
   margin-bottom: 0;
     padding: 0;
     font-size: 2em;
+        font-weight: 200;
+    letter-spacing: .02em;
 }
 
 .mask { 
@@ -266,17 +276,25 @@ justify-content: space-between;
 .flex-d h4 {
  font-size: 1.5em;
     margin: 0;
+    font-weight: 300;
 }
 
 .price {
  font-size: 1.5em; 
 margin-top: .85em;
-    font-weight: normal;
+    font-weight: 300;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.number {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;   
 }
 
 .price-d {
    font-size: 1.5em; 
+      font-weight: 300;
 text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .description {
@@ -285,7 +303,8 @@ max-width: 405px;
 margin: -2.25em 0 -.5em 0;
 padding: 0;
 color: grey;
-font-size: 1em; 
+font-size: 1em;
+font-weight: 300;
 }
 
 .description2 {
@@ -295,6 +314,7 @@ margin: 0 auto;
 padding: 0;
 color: grey;
 font-size: 1em; 
+    font-weight: 300;
 }
 
 .email-price {
@@ -309,9 +329,13 @@ display: inline-flex;
     text-align: center;
 }
 
+/*
 .georgia {
-font-family: Georgia, Times, 'Times New Roman', serif;  
+font-family: Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+
 }
+*/
 
 .flex-d a:hover  {
 border-bottom: 1px solid grey;   
@@ -363,9 +387,10 @@ max-width: 300px;
 
 
 .art-layout h4 {
- font-size: 1.5em;
+ font-size: 1.25em;
     margin: 0;
     text-align: center;
+    font-weight: 300;
 }
 
 .center {
@@ -417,7 +442,8 @@ animation: imageAnimation 36s linear infinite 0s;
 /* Opening Slideshow Images and Delay settings */
 
 .cb-slideshow li:nth-child(1) span { 
-background-image: url(../images/Study%20in%20Red.jpg) 
+background-image: url(../images/Study%20in%20Red.jpg);
+  
 }
 .cb-slideshow li:nth-child(2) span { 
 background-image: url(../images/image3.jpg);
@@ -518,6 +544,7 @@ animation-timing-function: ease-out; }
 }
 
 /* Animation for the title */
+/*
 
 @-webkit-keyframes titleAnimation { 
 0% { opacity: 0 }
@@ -559,6 +586,7 @@ animation-timing-function: ease-out; }
 100% { opacity: 0 }
 }
 
+*/
 
 
 .no-cssanimations .cb-slideshow li span{
@@ -634,14 +662,15 @@ Navigation
     
     
     #work {
-margin-top: 120vh;  
+margin-top: 
+    120vh;
 }
 
     
 .top-nav {
     position: fixed;
 background: white;
-     margin-top: -825px;
+     margin-top: -875px;
 }
     
 /*  SAFARI TOP_NAV Margin FIX   */
@@ -660,6 +689,7 @@ margin-top: -900px;
     
 _:-o-prefocus, body:last-child .top-nav {
 margin-top: -900px;}
+    
        
     
 nav.sticky {
@@ -699,8 +729,9 @@ header {
 }
 header h1 {
     font-size: 4em;
-    font-weight: 200;
+  
 line-height: 0;
+ 
 }
 
     
@@ -745,6 +776,12 @@ margin: 1em 7em;
 /*width: 33.3333333%;*/
 max-width: 300px;
 }
+    
+.nude {
+margin: 1em 7.5em;
+/*width: 33.3333333%;*/
+max-width: 175px;
+}
 
 .special-p {
      max-width: 900px;   
@@ -753,13 +790,15 @@ max-width: 300px;
     
 .special-p2 {
      max-width: 700px;   
-     margin: 1em 1em 3em 1em;   
+     margin: 1em 10em 3em 10em;   
     }
     
     .special-p3 {
      max-width: 700px;   
-   margin: 6em 1em 3em 1em;  
+   margin: 6em 10em 3em 10em;  
     }
+
+    
     
 
     
@@ -806,16 +845,16 @@ justify-content: space-around;
 .gallery-intro h3 {
 font-size: 3em; 
 line-height: 1.9;
-  
+ font-weight: 400; 
 }
     
 .text-intro {
 font-size: 1.1em;
-line-height: 1.85;
+line-height: 1.95;
 margin: 0 auto;
-max-width: 625px;
+max-width: 600px;
     padding: 0;
-  font-weight: lighter;
+  font-weight: 300;
 }
     
 .contact {
