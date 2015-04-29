@@ -1,10 +1,5 @@
 
 
-
-a.fancybox img:hover {
-    
- cursor: url(../images/zoom.png), auto;   
-}
 /*////////////////////////////////////////////// 
 Type, Color, General Styling 
 ///////////////////////////////////////////////*/
@@ -12,7 +7,6 @@ Type, Color, General Styling
 * {
 
 box-sizing: border-box;
-/*font-family: 'Istok Web', sans-serif;*/
 /*    border: 1px solid red;*/
     font-family: 'Whitney SSm A', 'Whitney SSm B';
 /*    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
@@ -56,6 +50,17 @@ line-height: 1.65;
     
 }
 
+a.fancybox img:hover {
+    
+ cursor: url(../images/zoom.png), auto;   
+}
+
+
+
+.small-caps {
+font-variant: small-caps; 
+}
+
 
 
 /*////////////////////////////////////////////// 
@@ -86,10 +91,6 @@ margin: 0 auto;
  margin: 0 .75em; 
 }
 
-.small-caps {
-  font-variant: small-caps; 
-    font-weight: 400;
-}
 
 .top-list li:first-child {  
 padding: .5em 0px;
@@ -140,21 +141,7 @@ padding: 0px;
 margin-left: 0;
 
 }
-/*
 
-.drop-nav li:last-child a {
- color: grey;   
-}
-
-.drop-nav li:last-child a:hover {
-border-bottom: 2px solid grey;   
-}
-*/
-
-.italics {
- font-style: italic;
-    font-size: .85em;
-}
 
 .drop-nav li {
 margin: 10px 0 10px 10px;
@@ -172,11 +159,10 @@ z-index: 3000;
 border-bottom: 2px solid black;   
 }
 
-/*
-.grey {
- color: grey;   
+.desktop-only {
+ display: none;
+    
 }
-*/
 
 /*////////////////////////////////////////////// 
 Opening Work Section
@@ -195,34 +181,10 @@ background-size: cover;
 }
 
 
-#intro-container {
-position: absolute;
-margin: auto;
-top: 0; left: 0; bottom: 0; right: 0;
-width: 100%;
-height: 120px;
-/*border: 1px solid red; */
-  padding: .4em;
-/*
-   background: hsla(360, 100%, 100%, .4); 
-    border-radius: 4px;
-*/
-}
-
 header {
  padding: 0;   
 }
 
-header h1 {
- text-align: center;
-  margin-bottom: 0;
-    padding: 0;
-    font-size: 4em;
-        font-weight: 200;
-    letter-spacing: .02em;
-    color: white;
-   text-shadow: 1px 1px 1px rgba(79, 79, 79, .75);
-}
 
 .mask { 
 height: 1px; 
@@ -319,7 +281,7 @@ justify-content: space-between;
 .price {
  font-size: 1.5em; 
 margin-top: .85em;
-    font-weight: 300;
+    font-weight: 200;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -328,10 +290,10 @@ margin-top: .85em;
 }
 
 .price-d {
-   font-size: 1.5em; 
-      font-weight: 300;
+font-size: 1.5em; 
+font-weight: 200;
 text-align: center;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .description {
@@ -400,9 +362,6 @@ max-width: 1250px;
     max-width: 1250px;
 }
 
-#gallery-special {
- padding: 10em 0;   
-}
 
 .art-layout {
  display: flex;
@@ -431,7 +390,9 @@ max-width: 300px;
  font-size: 1.25em;
     margin: 0;
     text-align: center;
-    font-weight: 300;
+    font-weight: 200;
+    font-variant: small-caps;
+    line-height: .85;
 }
 
 .center {
@@ -440,200 +401,6 @@ justify-content: center;
 }
 
 
-
-/*////////////////////////////////////////////// 
-Landing Page Slideshow Styling and Images
-///////////////////////////////////////////////*/
-
-.cb-slideshow,
-.cb-slideshow:after { 
-position: absolute;
-width: 100%;
-height: 100%;
-top: 0;
-left: 0;
-z-index: -1;
-}
-
-ul {
-list-style: none;     
-}
-
-
-.cb-slideshow li span { 
-width: 100%;
-height: 100%;
-/*position: absolute;*/
-position: absolute;
-top: 0px;
-left: 0px;
-color: transparent;
-background-size: cover;
-background-position: 50% 50%;
-background-repeat: none;
-opacity: 0;
-z-index: 0;
--webkit-backface-visibility: hidden;
--webkit-animation: imageAnimation 36s linear infinite 0s;
--moz-animation: imageAnimation 36s linear infinite 0s;
--o-animation: imageAnimation 36s linear infinite 0s;
--ms-animation: imageAnimation 36s linear infinite 0s;
-animation: imageAnimation 36s linear infinite 0s; 
-}
-
-/* Opening Slideshow Images and Delay settings */
-
-.cb-slideshow li:nth-child(1) span { 
-background-image: url(../images/Study%20in%20Red.jpg);
-  
-}
-.cb-slideshow li:nth-child(2) span { 
-background-image: url(../images/image3.jpg);
--webkit-animation-delay: 4s;
--moz-animation-delay: 4s;
--o-animation-delay: 4s;
--ms-animation-delay: 4s;
-animation-delay: 4s; 
-}
-
-.cb-slideshow li:nth-child(3) span { 
-background-image: url(../images/nude.jpg);
--webkit-animation-delay: 10s;
--moz-animation-delay: 10s;
--o-animation-delay: 10s;
--ms-animation-delay: 10s;
-animation-delay: 10s; 
-}
-
-.cb-slideshow li:nth-child(4) span { 
-background-image: url(../images/SubmarineDDS.jpg);
--webkit-animation-delay: 16s;
--moz-animation-delay: 16s;
--o-animation-delay: 16s;
--ms-animation-delay: 16s;
-animation-delay: 16s; 
-}
-
-.cb-slideshow li:nth-child(5) span { 
-background-image: url(../images/image1.jpg);
--webkit-animation-delay: 22s;
--moz-animation-delay: 22s;
--o-animation-delay: 22s;
--ms-animation-delay: 22s;
-animation-delay: 22s; 
-}
-
-.cb-slideshow li:nth-child(6) span { 
-background-image: url(../images/CloudStudy.jpg);
--webkit-animation-delay: 28s;
--moz-animation-delay: 28s;
--o-animation-delay: 28s;
--ms-animation-delay: 28s;
-animation-delay: 28s; 
-}
-
-
-/* Animation for the slideshow images */
-
-@-webkit-keyframes imageAnimation { 
-0% { opacity: 0;
--webkit-animation-timing-function: ease-in; }
-8% { opacity: 1;
--webkit-animation-timing-function: ease-out; }
-17% { opacity: 1 }
-25% { opacity: 0 }
-100% { opacity: 0 }
-}
-
-@-moz-keyframes imageAnimation { 
-0% { opacity: 0;
--moz-animation-timing-function: ease-in; }
-8% { opacity: 1;
--moz-animation-timing-function: ease-out; }
-17% { opacity: 1 }
-25% { opacity: 0 }
-100% { opacity: 0 }
-}
-
-@-o-keyframes imageAnimation { 
-0% { opacity: 0;
--o-animation-timing-function: ease-in; }
-8% { opacity: 1;
--o-animation-timing-function: ease-out; }
-17% { opacity: 1 }
-25% { opacity: 0 }
-100% { opacity: 0 }
-}
-
-@-ms-keyframes imageAnimation { 
-0% { opacity: 0;
--ms-animation-timing-function: ease-in; }
-8% { opacity: 1;
--ms-animation-timing-function: ease-out; }
-17% { opacity: 1 }
-25% { opacity: 0 }
-100% { opacity: 0 }
-}
-
-@keyframes imageAnimation { 
-0% { opacity: 0;
-animation-timing-function: ease-in; }
-8% { opacity: 1;
-animation-timing-function: ease-out; }
-17% { opacity: 1 }
-25% { opacity: 0 }
-100% { opacity: 0 }
-}
-
-/* Animation for the title */
-/*
-
-@-webkit-keyframes titleAnimation { 
-0% { opacity: 0 }
-8% { opacity: 1 }
-17% { opacity: 1 }
-19% { opacity: 0 }
-100% { opacity: 0 }
-}
-
-@-moz-keyframes titleAnimation { 
-0% { opacity: 0 }
-8% { opacity: 1 }
-17% { opacity: 1 }
-19% { opacity: 0 }
-100% { opacity: 0 }
-}
-
-@-o-keyframes titleAnimation { 
-0% { opacity: 0 }
-8% { opacity: 1 }
-17% { opacity: 1 }
-19% { opacity: 0 }
-100% { opacity: 0 }
-}
-
-@-ms-keyframes titleAnimation { 
-0% { opacity: 0 }
-8% { opacity: 1 }
-17% { opacity: 1 }
-19% { opacity: 0 }
-100% { opacity: 0 }
-}
-
-@keyframes titleAnimation { 
-0% { opacity: 0 }
-8% { opacity: 1 }
-17% { opacity: 1 }
-19% { opacity: 0 }
-100% { opacity: 0 }
-}
-
-*/
-
-
-.no-cssanimations .cb-slideshow li span{
-opacity: 1;
-}
 
 /*//////////////////////////////////////////////
 ////////////////////////////////////////////////
@@ -657,7 +424,7 @@ Gallery Styling - General
 ///////////////////////////////////////////////*/
 
 .gallery {
-   padding: 8em 0; 
+   padding: 6em 0; 
     max-width: 900px;
 }
 
@@ -673,6 +440,12 @@ Gallery Styling - General
     max-width: 300px;
     
 }
+    
+    
+    .special-p4 {
+     max-width: 400px;   
+     
+    } 
 
 .art-layout {
 -webkit-flex-direction: row; /* Safari 6.1+ */
@@ -681,6 +454,13 @@ flex-direction: row;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 }
+    
+    
+    #parasol-w, #chevron-w {
+max-width: 400px;   
+margin: 0 auto; 
+    }
+
     
 }
 
@@ -702,41 +482,12 @@ DESKTOP VERSION - MEDIA QUERIES
 Navigation
 ///////////////////////////////////////////////*/
     
-    
-/*
-    #work {
-margin-top: 
-    120vh;
-}
-*/
-
-    
+  
 .top-nav {
     position: fixed;
 background: white;
 /*     margin-top: -875px;*/
 }
-    
-/*  SAFARI TOP_NAV Margin FIX   */
-
-/*
-    _::-webkit-full-page-media, _:future, :root .safari_only {
-margin-top: -900px;
-}
-*/
-    
-/*  Firefox TOP_NAV Margin FIX   */
-    
-@-moz-document url-prefix() { 
-  .top-nav {
-   margin-top: -867px;
-  }
-}
-    
-_:-o-prefocus, body:last-child .top-nav {
-margin-top: -900px;}
-    
-       
     
 nav.sticky {
 background: hsla(360, 100%, 100%, .75);  
@@ -751,11 +502,7 @@ background: hsla(360, 100%, 100%, .5);
 top: 30px;
 }
     
-#arrow, #contact {
-height: 30px;
-width: 30px;
-    margin-top: 5px;
-}
+
     
     .dropdown:hover > .drop-nav {
 margin-top: 3px;
@@ -764,27 +511,20 @@ margin-top: 3px;
     .drop-nav {
     margin-left: -.75em;
     }
+  #arrow, #contact, .mobile-only {
+display: none;
+}
     
+.desktop-only {
+ display: inherit;
+    
+}
     
 
 /*////////////////////////////////////////////// 
 Opening Work Section
 ///////////////////////////////////////////////*/
-header {
-/* padding-top: 2.5em;   */
-/*    padding-top: 6em*/
-}
-header h1 {
-    font-size: 6em;
-  font-weight: 200;
-line-height: 0;
- 
-}
 
-    
-#clickMe {
-margin: auto;
-}
     
 .mask {
  margin: 6em auto;   
@@ -803,42 +543,20 @@ SECTION BREAK _ IMAGES
 .cover {
     padding: 10em 0;
     }
-/*
-    
- .cover-image {
-display: inherit;
-margin: 0 auto;
-width: 100%;
-height: 90vh;
-padding: 0;
-    }
-    
-    
-    #cover1 {
-     background: url(../images/CloudStudy.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;   
-}
-    
-        
-    #cover2 {
-     background: url(../images/image2.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;   
-}
-    
-*/
+
 
     
-    .space-b {
+    .center {
 justify-content: center;
     -webkit-justify-content: center;
 }
 
+    
+    
+    .space-b {
+justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
 
     
         /*//////////////////////////////////////////////
@@ -854,84 +572,20 @@ Gallery Styling - General
     max-width: 1250px;
 
 }
-
-.quilt {
-margin: 1em 3em;
-/*width: 33.3333333%;*/
-max-width: 275px;
-}
     
+   
+.gallery-intro {
     
-.parasol {
-margin: 1em 8em;
-/*width: 33.3333333%;*/
-max-width: 275px;
-}
-    
-.quilt-small {
-  margin: 0;
-max-width: 175px;  
-}
-    
-.nude {
-margin: 1em 7.5em;
-/*width: 33.3333333%;*/
-max-width: 175px;
-}
-
-.special-p {
-     max-width: 900px;   
-     margin: 1em 1em 3em 1em;   
-    }
-    
-.special-p2 {
-     max-width: 700px;   
-     margin: 1em 10em 3em 10em;   
-    }
-    
-    .special-p3 {
-     max-width: 700px;   
-   margin: 6em 10em 3em 10em;  
-    }
-
-  
-    .special-p4 {
-     max-width: 400px;   
-     
-    }   
-
-    
-.top {
- margin-top: 6em;   
-}
-    
-.kieki {
- margin: 1em 1em;
-    width: 50%;
-    max-width: 300px;
-    
-}
-    
-.kieki-w {
- display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 200px;
- 
-}
-    
-    
-    .gallery-intro {
-    
-     display: flex;
+display: flex;
 display: -webkit-flex;
 align-items: flex-start;
+/*
 justify-content: space-between;
 -webkit-justify-content: space-between;
+*/
     }
     
-    .space-around {
-        
+.space-around {
 justify-content: space-around;
 -webkit-justify-content: space-around;          
    
@@ -949,13 +603,110 @@ line-height: 1.9;
     
 .text-intro {
 font-size: 1.1em;
-line-height: 1.95;
+line-height: 2;
 margin: 0 auto;
-max-width: 600px;
+max-width: 625px;
     padding: 0;
   font-weight: 300;
 }
     
+  
+/* Parasol Styling ////////////*/ 
+    
+    
+#parasol-w {
+max-width: 900px;   
+margin: 0 auto; 
+    }
+    
+.parasol {
+margin: 3em 0;
+/*width: 33.3333333%;*/
+max-width: 275px;
+}
+    
+.parasol-large {
+margin: 3em auto 0 auto;
+width: 100%;
+max-width: 500px;
+}
+    
+.special-p {
+width: 100%;
+margin: 0 0 3em 0;
+}
+    
+    
+    
+/* Chevron Styling ////////////*/ 
+    
+    
+#chevron-w {
+ max-width: 800px;
+    margin: 0 auto;
+}
+      
+.fifty {
+width: 50%;
+margin: 3em 0;
+max-width: 352px;
+    }
+    
+.thirty {
+width: 33.3333333%;
+max-width: 170px;
+margin: 3em 0;
+}
+    
+#chevron-w {
+max-width: 800px;
+margin: 0 auto;
+}
+
+
+    
+.special-p2, .special-p3, .special-p5 {
+width: 100%;   
+}
+    
+.special-p2 {
+margin: 0 0 3em 0;    
+}
+    
+.special-p3 {
+margin: 3em 0;  
+}
+    
+.special-p5 {
+margin: 3em 0 0 0;    
+    }
+
+  
+
+/* Quilt Styling ////////////*/ 
+    
+    
+.quilt {
+margin: 1em 3em;
+/*width: 33.3333333%;*/
+max-width: 275px;
+}
+    
+.quilt-small {
+  margin: 0;
+max-width: 175px;  
+}
+
+/* Kieki Styling ////////////*/
+    
+.kieki {
+margin: 1em 1em;
+width: 50%;
+max-width: 300px;
+}
+
+    
+ 
 .contact {
     width: 50%;
  max-width: 625px;
