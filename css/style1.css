@@ -43,9 +43,17 @@ vertical-align: super;
 .each {
 font-size: .65em;
 }
+/*
 
 #work {
-margin-top: 100vh;  
+margin-top: 105vh;  
+}
+*/
+
+.text-intro {
+font-size: 1.1em;
+line-height: 1.65;
+    
 }
 
 
@@ -174,17 +182,46 @@ border-bottom: 2px solid black;
 Opening Work Section
 ///////////////////////////////////////////////*/
 
+#intro-cover {
+margin: 0;
+width: 100%;
+height: 100vh;
+background: url(../images/Study%20in%20Red.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+
+}
+
+
+#intro-container {
+position: absolute;
+margin: auto;
+top: 0; left: 0; bottom: 0; right: 0;
+width: 100%;
+height: 120px;
+/*border: 1px solid red; */
+  padding: .4em;
+/*
+   background: hsla(360, 100%, 100%, .4); 
+    border-radius: 4px;
+*/
+}
+
 header {
- padding: 0 0 9em 0;   
+ padding: 0;   
 }
 
 header h1 {
  text-align: center;
   margin-bottom: 0;
     padding: 0;
-    font-size: 2em;
+    font-size: 4em;
         font-weight: 200;
     letter-spacing: .02em;
+    color: white;
+   text-shadow: 1px 1px 1px rgba(79, 79, 79, .75);
 }
 
 .mask { 
@@ -197,7 +234,7 @@ border-bottom: 1px solid #BCBCBC;
 
 #clickMe {
 width: 90%;
-max-width: 800px;
+max-width: 700px;
 margin: 1em auto;
 cursor: url(../images/right-arrow-white.png), auto;
 }
@@ -363,6 +400,10 @@ max-width: 1250px;
     max-width: 1250px;
 }
 
+#gallery-special {
+ padding: 10em 0;   
+}
+
 .art-layout {
  display: flex;
 display: -webkit-flex;
@@ -378,16 +419,6 @@ justify-content: center;
 flex-direction: column;
 
 }
-
-    
-    .space-b {
-justify-content: center;
-    -webkit-justify-content: center;
-}
-  .special-p4 {
-     max-width: 400px;   
-     
-    } 
 
 .quilt, .kieki {
    margin: 1em 0;
@@ -414,13 +445,12 @@ justify-content: center;
 Landing Page Slideshow Styling and Images
 ///////////////////////////////////////////////*/
 
-
 .cb-slideshow,
 .cb-slideshow:after { 
 position: absolute;
 width: 100%;
-height: 75vh;
-top: 12vh;
+height: 100%;
+top: 0;
 left: 0;
 z-index: -1;
 }
@@ -433,6 +463,7 @@ list-style: none;
 .cb-slideshow li span { 
 width: 100%;
 height: 100%;
+/*position: absolute;*/
 position: absolute;
 top: 0px;
 left: 0px;
@@ -554,6 +585,50 @@ animation-timing-function: ease-out; }
 100% { opacity: 0 }
 }
 
+/* Animation for the title */
+/*
+
+@-webkit-keyframes titleAnimation { 
+0% { opacity: 0 }
+8% { opacity: 1 }
+17% { opacity: 1 }
+19% { opacity: 0 }
+100% { opacity: 0 }
+}
+
+@-moz-keyframes titleAnimation { 
+0% { opacity: 0 }
+8% { opacity: 1 }
+17% { opacity: 1 }
+19% { opacity: 0 }
+100% { opacity: 0 }
+}
+
+@-o-keyframes titleAnimation { 
+0% { opacity: 0 }
+8% { opacity: 1 }
+17% { opacity: 1 }
+19% { opacity: 0 }
+100% { opacity: 0 }
+}
+
+@-ms-keyframes titleAnimation { 
+0% { opacity: 0 }
+8% { opacity: 1 }
+17% { opacity: 1 }
+19% { opacity: 0 }
+100% { opacity: 0 }
+}
+
+@keyframes titleAnimation { 
+0% { opacity: 0 }
+8% { opacity: 1 }
+17% { opacity: 1 }
+19% { opacity: 0 }
+100% { opacity: 0 }
+}
+
+*/
 
 
 .no-cssanimations .cb-slideshow li span{
@@ -639,34 +714,29 @@ margin-top:
 .top-nav {
     position: fixed;
 background: white;
-     margin-top: -728px;
+/*     margin-top: -875px;*/
 }
     
 /*  SAFARI TOP_NAV Margin FIX   */
 
+/*
     _::-webkit-full-page-media, _:future, :root .safari_only {
-margin-top: -750px;    
-
-
+margin-top: -900px;
 }
+*/
     
 /*  Firefox TOP_NAV Margin FIX   */
     
 @-moz-document url-prefix() { 
   .top-nav {
-   margin-top: -721px;
+   margin-top: -867px;
   }
 }
     
-/*
 _:-o-prefocus, body:last-child .top-nav {
-margin-top: -700px;}
+margin-top: -900px;}
     
-*/
-       .space-b {
-justify-content: center;
-    -webkit-justify-content: center;
-}    
+       
     
 nav.sticky {
 background: hsla(360, 100%, 100%, .75);  
@@ -676,12 +746,10 @@ background: hsla(360, 100%, 100%, .75);
 background: hsla(360, 100%, 100%, .5);  
 }
     
-/*
     .cb-slideshow { 
 
-top: 70px;
+top: 30px;
 }
-*/
     
 #arrow, #contact {
 height: 30px;
@@ -703,21 +771,20 @@ margin-top: 3px;
 Opening Work Section
 ///////////////////////////////////////////////*/
 header {
- padding-top: 2.25em;   
+/* padding-top: 2.5em;   */
+/*    padding-top: 6em*/
 }
 header h1 {
-    font-size: 4em;
-  
+    font-size: 6em;
+  font-weight: 200;
 line-height: 0;
  
 }
 
     
-/*
 #clickMe {
 margin: auto;
 }
-*/
     
 .mask {
  margin: 6em auto;   
@@ -736,6 +803,43 @@ SECTION BREAK _ IMAGES
 .cover {
     padding: 10em 0;
     }
+/*
+    
+ .cover-image {
+display: inherit;
+margin: 0 auto;
+width: 100%;
+height: 90vh;
+padding: 0;
+    }
+    
+    
+    #cover1 {
+     background: url(../images/CloudStudy.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;   
+}
+    
+        
+    #cover2 {
+     background: url(../images/image2.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;   
+}
+    
+*/
+
+    
+    .space-b {
+justify-content: center;
+    -webkit-justify-content: center;
+}
+
+
     
         /*//////////////////////////////////////////////
 ////////////////////////////////////////////////
@@ -752,9 +856,21 @@ Gallery Styling - General
 }
 
 .quilt {
-margin: 1em 7em;
+margin: 1em 3em;
 /*width: 33.3333333%;*/
-max-width: 300px;
+max-width: 275px;
+}
+    
+    
+.parasol {
+margin: 1em 8em;
+/*width: 33.3333333%;*/
+max-width: 275px;
+}
+    
+.quilt-small {
+  margin: 0;
+max-width: 175px;  
 }
     
 .nude {
@@ -762,12 +878,6 @@ margin: 1em 7.5em;
 /*width: 33.3333333%;*/
 max-width: 175px;
 }
-    
-    .quilt-small {
-  margin: 0;
-max-width: 175px;  
-}
-  
 
 .special-p {
      max-width: 900px;   
@@ -784,8 +894,11 @@ max-width: 175px;
    margin: 6em 10em 3em 10em;  
     }
 
-    
-    
+  
+    .special-p4 {
+     max-width: 400px;   
+     
+    }   
 
     
 .top {
@@ -798,7 +911,6 @@ max-width: 175px;
     max-width: 300px;
     
 }
-
     
 .kieki-w {
  display: block;
