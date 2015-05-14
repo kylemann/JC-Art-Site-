@@ -61,6 +61,12 @@ a.fancybox img:hover {
 font-variant: small-caps; 
 }
 
+/*
+.italics {
+color: grey; 
+}
+*/
+
 
 
 /*////////////////////////////////////////////// 
@@ -88,7 +94,8 @@ margin: 0 auto;
 }
 
 .top-list li {
- margin: 0 .75em; 
+ margin: 0 .75em;
+
 }
 
 
@@ -156,7 +163,7 @@ z-index: 3000;
 }
 
 .top-nav li a:hover  {
-border-bottom: 2px solid black;   
+border-bottom: 1px solid black;   
 }
 
 .desktop-only {
@@ -229,6 +236,10 @@ padding: 5em 0;
 max-width: 800px;
 
 }
+
+
+
+
 .cover-description {
  margin: 0 auto;   
 }
@@ -262,7 +273,7 @@ align-self: baseline;
 }
 
 
-.flex-d {
+.flex-d, .email-title {
 display: flex;
 display: -webkit-flex;
 align-items: center;
@@ -272,17 +283,40 @@ justify-content: space-between;
 }
 
 
-.flex-d h4 {
- font-size: 1.5em;
+.flex-d h4, h5 {
+
     margin: 0;
     font-weight: 300;
 }
 
-.price {
- font-size: 1.5em; 
-margin-top: .85em;
+.flex-d h4
+{
+  font-size: 1.5em;   
+}
+
+h5
+{
+  font-size: 1.15em;   
+}
+
+
+.price, .price2 {
+
+
     font-weight: 200;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.price {
+ font-size: 1.5em; 
+    margin-top: .85em;
+    
+}
+
+.price2 {
+ font-size: 1.15em; 
+    margin-top: .95em;
+    
 }
 
 .number {
@@ -387,11 +421,11 @@ max-width: 300px;
 
 
 .art-layout h4 {
- font-size: 1.25em;
+ font-size: 1.15em;
     margin: 0;
     text-align: center;
-    font-weight: 200;
-    font-variant: small-caps;
+    font-weight: 300;
+/*    font-variant: small-caps;*/
     line-height: .85;
 }
 
@@ -505,11 +539,12 @@ top: 30px;
 
     
     .dropdown:hover > .drop-nav {
-margin-top: 3px;
+margin-top: 1em;
 
 }
     .drop-nav {
-    margin-left: -.75em;
+    margin-left: -3em;
+       
     }
   #arrow, #contact, .mobile-only {
 display: none;
@@ -605,7 +640,7 @@ line-height: 1.9;
 font-size: 1.1em;
 line-height: 2;
 margin: 0 auto;
-max-width: 625px;
+max-width: 650px;
     padding: 0;
   font-weight: 300;
 }
@@ -615,26 +650,40 @@ max-width: 625px;
     
     
 #parasol-w {
-max-width: 900px;   
+max-width: 800px;   
 margin: 0 auto; 
     }
     
 .parasol {
 margin: 3em 0;
 /*width: 33.3333333%;*/
-max-width: 275px;
+max-width: 375px;
 }
     
 .parasol-large {
-margin: 3em auto 0 auto;
+margin: 3em 0;
 width: 100%;
-max-width: 500px;
+max-width: 375px;
 }
     
 .special-p {
 width: 100%;
 margin: 0 0 3em 0;
 }
+    
+    .bottom {
+      margin-bottom: 3em;
+    }
+    
+    .top-close {
+     margin-top: -1.35em;
+         width: 100%; 
+    }
+.width-fix {
+      width: 100%; 
+}
+    
+ 
     
     
     
