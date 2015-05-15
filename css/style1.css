@@ -175,44 +175,7 @@ border-bottom: 1px solid black;
 }
 
 
-/* Underline From Center */
-.hvr-underline-from-center, .hvr-underline-from-center-2 {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  overflow: hidden;
-}
-.hvr-underline-from-center:before, .hvr-underline-from-center-2:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  background: black;
-  height: 2px;
-  -webkit-transition-property: left, right;
-  transition-property: left, right;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
 
-.hvr-underline-from-center-2:before{
-  background: grey;  
-      height: 1px;
-}
-.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before, .hvr-underline-from-center-2:hover:before, .hvr-underline-from-center-2:focus:before, .hvr-underline-from-center-2:active:before {
-  left: 0;
-  right: 0;
-}
 
 
 /*////////////////////////////////////////////// 
@@ -287,6 +250,21 @@ max-width: 800px;
 .cover-description {
  margin: 0 auto;   
 }
+
+   .bottom {
+       margin-top: .25em;
+      margin-bottom: 2.5em;
+ 
+    }
+
+    .top-close {
+     margin-top: -1em;
+         width: 100%;
+/*   margin-bottom: 2.5em;*/
+    }
+
+
+
 
 .image-b {
 margin: 0 auto -1.5em auto;  
@@ -438,7 +416,7 @@ max-width: 1250px;
 
 .gallery-intro {
  margin: 0 auto 0 auto;
-    width: 90%;
+    width: 95%;
     max-width: 1250px;
 }
 
@@ -448,10 +426,7 @@ max-width: 1250px;
 display: -webkit-flex;
 align-items: center;
 -webkit-align-items: center;
-/*
-justify-content: space-between;
--webkit-justify-content: space-between;
-*/
+
 justify-content: center;
 -webkit-justify-content: center;
     -webkit-flex-direction: column; /* Safari 6.1+ */
@@ -460,7 +435,7 @@ flex-direction: column;
 }
 
 .quilt, .kieki {
-   margin: 1em 0;
+/*   margin: 1em 0;*/
 max-width: 300px;
 }
 
@@ -479,6 +454,26 @@ max-width: 300px;
 justify-content: center;
     -webkit-justify-content: center;
 }
+
+.parasol {
+ margin: 1em 0 2.5em 0;   
+}
+
+.parasol-large {
+ margin: 1em 0 2.5em 0;   
+}
+
+   .top-description {
+     margin-top: -1.9em; 
+        font-size: .9em;
+    }
+
+  .special-p4, .special-p2, .nude, .special-p3, .kieki, .quilt, .quilt-small {
+   margin-bottom: 2.5em; 
+     
+    } 
+
+
 
 
 
@@ -524,7 +519,7 @@ Gallery Styling - General
     
     .special-p4 {
      max-width: 400px;   
-     
+     margin: 0;
     } 
 
 .art-layout {
@@ -601,6 +596,53 @@ display: none;
     
 }
     
+    /* Underline From Center */
+.hvr-underline-from-center, .hvr-underline-from-center-2 {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before, .hvr-underline-from-center-2:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: black;
+  height: 1px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-center-2:before{
+  background: grey;  
+      height: 1px;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center-2:hover:before {
+    
+  left: 0;
+  right: 0;
+}
+/*
+    
+    .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before, .hvr-underline-from-center-2:hover:before, .hvr-underline-from-center-2:focus:before, .hvr-underline-from-center-2:active:before {
+  left: 0;
+  right: 0;
+}
+*/
+    
 
 /*////////////////////////////////////////////// 
 Opening Work Section
@@ -660,10 +702,7 @@ Gallery Styling - General
 display: flex;
 display: -webkit-flex;
 align-items: flex-start;
-/*
-justify-content: space-between;
--webkit-justify-content: space-between;
-*/
+
     }
     
 .space-around {
@@ -707,7 +746,7 @@ max-width: 375px;
 }
     
 .parasol-large {
-margin: 3em 0;
+margin: 3em 0 0 0;
 width: 100%;
 max-width: 375px;
 }
@@ -719,6 +758,7 @@ margin: 0 0 3em 0;
     
     .bottom {
       margin-bottom: 3em;
+         margin-top: .5em;
     }
     
     .top-close {
@@ -727,14 +767,8 @@ margin: 0 0 3em 0;
    
     }
     
-    .top-d {
-     margin-top: .5em;   
-    }
-    
-    .top-description {
-     margin-top: -1.9em; 
-        font-size: .85em;
-    }
+
+
 .width-fix {
       width: 100%; 
 }
@@ -828,12 +862,7 @@ line-height: 2;
     .contact a {
      color: grey;   
     }
-/*
-    .contact a:hover  {
-border-bottom: 2px solid black;   
-}
-*/
-    
+ 
     
 
 }
